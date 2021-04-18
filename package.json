@@ -1,0 +1,31 @@
+{
+  "name": "vuepress-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ant-design-vue": "^1.7.4",
+    "vuepress": "^1.8.0",
+    "vuepress-plugin-code-switcher": "^1.0.5",
+    "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-mathjax": "^1.2.8",
+    "vuepress-plugin-mygitalk": "^1.0.5",
+    "vuepress-plugin-viewer": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.0",
+    "@vuepress/plugin-medium-zoom": "^1.8.0",
+    "@vuepress/plugin-nprogress": "^1.8.0",
+    "markdown-it-katex": "^2.0.3",
+    "vuepress-plugin-disqus": "^0.2.0",
+    "vuepress-theme-hope": "^1.9.1"
+  }
+}
