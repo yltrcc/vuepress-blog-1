@@ -559,6 +559,15 @@ module.exports = {
         }, {
             title: '选择器(二)',
             path: '选择器(二)'
+        }, {
+            title: '层叠与优先级',
+            path: '层叠与优先级'
+        }, {
+            title: '盒子模型',
+            path: '盒子模型'
+        }, {
+            title: '排版',
+            path: '排版'
         }]
     }]
 }
