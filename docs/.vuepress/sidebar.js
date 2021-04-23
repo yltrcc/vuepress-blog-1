@@ -315,6 +315,9 @@ module.exports = {
         children: [{
             title: '两数之和',
             path: '两数之和'
+        }, {
+            title: '字母异位词分组',
+            path: '字母异位词分组'
         }]
     }, {
         title: '双指针',
@@ -349,6 +352,9 @@ module.exports = {
         children: [{
             title: '合并K个升序链表',
             path: '合并K个升序链表'
+        }, {
+            title: 'Pow(x,n)',
+            path: 'Pow(x,n)'
         }]
     }, {
         title: '动态规划',
@@ -356,6 +362,9 @@ module.exports = {
         children: [{
             title: '跳跃游戏II',
             path: '跳跃游戏II'
+        }, {
+            title: '最大子序和',
+            path: '最大子序和'
         }]
     }, {
         title: '贪心',
