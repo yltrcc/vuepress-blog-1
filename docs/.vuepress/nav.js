@@ -11,27 +11,13 @@ module.exports = [{
         icon: "data-structure"
     }, {
         text: '算法',
-        items: [{
-            text: '排序算法',
-            link: '/算法/排序算法/',
-            icon: 'sort'
-        }, {
-            text: '字符串算法',
-            link: '/算法/字符串算法/',
-            icon: 'string'
-        }]
+        icon: 'alo',
+        link: '/算法/',
     }, {
         text: '刷题',
-        items: [{
-            text: "剑指offer",
-            link: "/刷题/剑指offer/",
-            icon: "offer"
-        }, {
-            text: 'LeetCode',
-            link: '/刷题/LeetCode/',
-            icon: 'leetcode'
-        }]
-    }, ]
+        icon: 'offer',
+        link: '/刷题/'
+    },]
 }, {
     text: "大前端",
     icon: "front-end",

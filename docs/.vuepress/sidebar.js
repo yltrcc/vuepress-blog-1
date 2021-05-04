@@ -297,10 +297,20 @@ module.exports = {
             path: '数字信号处理/方程与框图的转换'
         }]
     }],
-    "/刷题/LeetCode/": [{
+    "/刷题/": [{
+        title: '数组',
+        collapsable: false,
+        children: [{
+            title: '删除有序数组中的重复项',
+            path: '删除有序数组中的重复项'
+        }]
+    }, {
         title: '栈',
         collapsable: false,
-        children: []
+        children: [{
+            title: '包含min函数的栈',
+            path: '包含min函数的栈'
+        }]
     }, {
         title: '队列',
         collapsable: false,
@@ -308,7 +318,10 @@ module.exports = {
     }, {
         title: '链表',
         collapsable: false,
-        children: []
+        children: [{
+            title: '旋转链表',
+            path: '旋转链表'
+        }]
     }, {
         title: '集合',
         collapsable: false,
@@ -318,6 +331,13 @@ module.exports = {
         }, {
             title: '字母异位词分组',
             path: '字母异位词分组'
+        }]
+    }, {
+        title: '二分查找',
+        collapsable: false,
+        children: [{
+            title: 'x的平方根',
+            path: 'x的平方根'
         }]
     }, {
         title: '双指针',
@@ -331,7 +351,16 @@ module.exports = {
         }, {
             title: '盛水最多的容器',
             path: '盛水最多的容器'
-        }, ]
+        }, {
+            title: '合并区间',
+            path: '合并区间'
+        }, {
+            title: '删除有序数组中的重复项',
+            path: '删除有序数组中的重复项'
+        }, {
+            title: '外观数列',
+            path: '外观数列'
+        }]
     }, {
         title: '滑动窗口',
         collapsable: false,
@@ -345,6 +374,9 @@ module.exports = {
         }, {
             title: '最长回文字符串',
             path: '最长回文字符串'
+        }, {
+            title: '简化路径',
+            path: '简化路径'
         }]
     }, {
         title: '分治',
@@ -365,6 +397,12 @@ module.exports = {
         }, {
             title: '最大子序和',
             path: '最大子序和'
+        }, {
+            title: '不同路径',
+            path: '不同路径'
+        }, {
+            title: '最小路径和',
+            path: '最小路径和'
         }]
     }, {
         title: '贪心',
@@ -376,6 +414,15 @@ module.exports = {
         children: [{
             title: '全排列',
             path: '全排列'
+        }, {
+            title: '组合总数',
+            path: '组合总数'
+        }, {
+            title: '组合',
+            path: '组合'
+        }, {
+            title: '单词搜索',
+            path: '单词搜索'
         }]
     }],
     "/收藏/": [{

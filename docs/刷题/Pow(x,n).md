@@ -1,6 +1,5 @@
 ---
 title: Pow(x,n)
-time: 2021-04-21
 author: 熊滔
 category: LeetCode
 ---
@@ -96,3 +95,5 @@ private double myPowWithPositiveExp(double x, int n) {
 ## 参考链接
 
 - #### [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
+
+<Disqus />

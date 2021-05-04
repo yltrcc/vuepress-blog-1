@@ -1,7 +1,6 @@
 ---
 title: 合并K个升序链表
 categories: LeetCode
-time: 2021-03-26
 author: 熊滔
 ---
 
@@ -122,7 +121,7 @@ private ListNode mergeKLists(ListNode[] lists, int left, int right) {
 $$
 \dfrac{n}{2} + \dfrac{n}{4} + \dfrac{n}{8} + \cdots + 1
 $$
-为了方便计算，不妨假设 $n = 2^i$，即 $n$ 为 $2$ 的整数次幂，则上次可以改为
+为了方便计算，不妨假设 $n = 2^i$，即 $n$ 为 $2$ 的整数次幂，则上式可以改为
 $$
 \sum_{i = 1}^{\log_2 n} \frac{n}{2^i} \approx n - 1
 $$
@@ -137,3 +136,5 @@ $$
 ## 参考链接
 
 - [合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+
+<Disqus />
