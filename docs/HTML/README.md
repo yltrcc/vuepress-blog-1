@@ -12,6 +12,10 @@ author: 熊滔
 - [超链接](vuepress-blog/HTML/超链接)
 - [列表](vuepress-blog/HTML/列表)
 - [表格](vuepress-blog/HTML/表格)
-- [表单](vuepress-blog/HTML/表单)
+- [表单(一)](vuepress-blog/HTML/表单(一))
+- [表单(二)](vuepress-blog/HTML/表单(二))
+- [div和span](vuepress-blog/HTML/div和span)
+- [语义化标签](vuepress-blog/HTML/语义化标签)
 
 <Disqus />
+
