@@ -23,14 +23,23 @@ module.exports = config({
         author: '熊滔',
         sidebar,
         nav,
+        iconPrefix: "icon-",
+        docsBranch: 'master',
+        docsDir: 'docs',
+        docsRepo: 'https://github.com/LastKnightCoder/vuepress-blog',
+        editLinks: true,
+        prevLinks: true,
+        nextLinks: true,
         mdEnhance: {
             align: true,
             flowchart: true,
             tex: false,
             lineNumbers: false,
-            demo: true
+            demo: true,
+            mermaid: true
         },
-        iconPrefix: "icon-"
+        feed: false,
+        hostname: ''
     },
     plugins: [
         "@vuepress/nprogress",

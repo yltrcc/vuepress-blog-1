@@ -619,9 +619,6 @@ module.exports = {
             title: 'CSS介绍',
             path: 'CSS介绍'
         }, {
-            title: '在浏览器中调试CSS',
-            path: '在浏览器中调试CSS'
-        }, {
             title: '选择器(一)',
             path: '选择器(一)'
         }, {
@@ -633,6 +630,9 @@ module.exports = {
         }, {
             title: '盒子模型',
             path: '盒子模型'
+        }, {
+            title: '在浏览器中调试CSS',
+            path: '在浏览器中调试CSS'
         }, {
             title: '字体样式',
             path: '字体样式'
