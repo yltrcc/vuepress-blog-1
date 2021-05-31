@@ -1,5 +1,5 @@
 ---
-title: MyBatis入门
+title: MyBatis学习入门
 author: 熊滔
 ---
 
