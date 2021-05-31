@@ -1,7 +1,6 @@
 ---
 title: Java集合与泛型
-category: JavaSE
-time: 2019-07-08
+author: 熊滔
 ---
 
 ## Collection

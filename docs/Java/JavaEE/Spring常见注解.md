@@ -1,3 +1,9 @@
+---
+title: Spring常见注解
+author: 熊滔
+---
+
+
 介绍 `Spring` 框架中的常见注解(**`NO XML`**)，在介绍 `Spring` 注解之前，简要的介绍一下 `IoC`。
 
 ## IoC简要介绍

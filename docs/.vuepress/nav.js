@@ -58,12 +58,12 @@ module.exports = [{
     text: "Java",
     icon: "Java",
     items: [{
-        text: "Java基础",
+        text: "JavaSE",
         link: "/Java/JavaSE/",
         icon: "JavaSE"
     }, {
-        text: "框架",
-        link: "/Java/框架/",
+        text: "JavaEE",
+        link: "/Java/JavaEE/",
         icon: "Spring"
     }]
 }, {
@@ -110,4 +110,8 @@ module.exports = [{
         link: '/收藏/电影',
         icon: 'dianying'
     }]
+}, {
+    text: '随笔',
+    icon: 'suibi',
+    link: '/随笔/'
 }]

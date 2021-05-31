@@ -1,7 +1,6 @@
 ---
 title: JDBC
-category: JavaSE
-time: 2019-08-15
+author: 熊滔
 ---
 
 ## 初识JDBC

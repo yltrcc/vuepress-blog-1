@@ -619,6 +619,9 @@ module.exports = {
             title: 'CSS介绍',
             path: 'CSS介绍'
         }, {
+            title: '在浏览器中调试CSS',
+            path: '在浏览器中调试CSS'
+        }, {
             title: '选择器(一)',
             path: '选择器(一)'
         }, {
@@ -631,8 +634,86 @@ module.exports = {
             title: '盒子模型',
             path: '盒子模型'
         }, {
-            title: '排版',
-            path: '排版'
+            title: '字体样式',
+            path: '字体样式'
+        }]
+    }],
+    "/随笔/": [{
+        title: '思考',
+        collapsable: false,
+        children: [{
+            title: '小球会停下来吗',
+            path: '小球会停下来吗'
+        }]
+    }, {
+        title: '技术',
+        collapsable: false,
+        children: [{
+            title: '',
+            path: ''
+        }]
+    }],
+    "/Java/": [{
+        title: 'JavaSE',
+        collapsable: false,
+        children: [{
+            title: 'Java开发环境搭建',
+            path: 'JavaSE/Java开发环境搭建'
+        }, {
+            title: 'Java基础知识介绍',
+            path: 'JavaSE/Java基础知识介绍'
+        }, {
+            title: 'Java面向对象',
+            path: 'JavaSE/Java面向对象'
+        }, {
+            title: 'Java集合与泛型',
+            path: 'JavaSE/Java集合与泛型'
+        }, {
+            title: 'Java常用API',
+            path: 'JavaSE/Java常用API'
+        }, {
+            title: 'Java多线程',
+            path: 'JavaSE/Java多线程'
+        }, {
+            title: 'Java8新特性',
+            path: 'JavaSE/Java8新特性'
+        }, {
+            title: 'Java反射',
+            path: 'JavaSE/Java反射'
+        }, {
+            title: 'Java异常',
+            path: 'JavaSE/Java异常'
+        }, {
+            title: 'Java文件操作',
+            path: 'JavaSE/Java文件操作'
+        }, {
+            title: 'Java注解',
+            path: 'JavaSE/Java注解'
+        }, {
+            title: 'JDBC',
+            path: 'JavaSE/JDBC'
+        }]
+    }, {
+        title: 'JavaEE',
+        collapsable: false,
+        children: [{
+            title: 'MyBatis学习入门',
+            path: 'JavaEE/MyBatis学习入门'
+        }, {
+            title: 'Spring入门',
+            path: 'JavaEE/Spring入门'
+        }, {
+            title: 'SpringMVC入门',
+            path: 'JavaEE/SpringMVC入门'
+        }, {
+            title: 'SSM整合',
+            path: 'JavaEE/SSM整合'
+        }, {
+            title: 'Spring常见注解',
+            path: 'JavaEE/Spring常见注解'
+        }, {
+            title: 'SpringBoot入门',
+            path: 'JavaEE/SpringBoot入门'
         }]
     }]
 }

@@ -1,7 +1,6 @@
 ---
 title: Java8新特性
-category: JavaSE
-time: 2019-07-14
+author: 熊滔
 ---
 
 本篇文章会介绍`Java 8`中的一些新特性(不包括`Lambda`表达式，因为在[Java多线程](https://lastknightcoder.github.io/vuepress-blog/Java/Java多线程)这篇文章中介绍过了)。主要内容是`Java 8`中新增的函数式接口以及`Stream`流，还有方法引用。

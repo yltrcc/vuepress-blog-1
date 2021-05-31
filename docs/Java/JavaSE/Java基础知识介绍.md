@@ -1,7 +1,6 @@
 ---
 title: Java基础知识介绍
-category: JavaSE
-time: 2019-07-04
+author: 熊滔
 ---
 
 ## 第一个程序: HelloWorld

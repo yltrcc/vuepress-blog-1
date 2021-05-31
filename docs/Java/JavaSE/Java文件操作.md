@@ -1,7 +1,6 @@
 ---
 title: Java文件操作
-category: JavaSE
-time: 2019-08-03
+author: 熊滔
 ---
 
 ## File

@@ -1,6 +1,5 @@
 ---
 title: CSS介绍
-time: 2021-04-14
 author: 熊滔
 category: CSS
 ---
@@ -40,10 +39,10 @@ category: CSS
     <title>CSS介绍</title>
     <style>
         h1 {
-            color: blue;
+            color: blue; /* 设置一级标题的字体颜色为蓝色*/
         }
         p {
-            text-align: right;
+            text-align: right; /* 设置 p 中文本对齐的方式为右对齐 */
         }
     </style>
 </head>
@@ -57,19 +56,21 @@ category: CSS
 在 `head` 标签中有一个 `style` 标签，在  `style` 标签中我们书写几个样式，为 `h1` 添加了 `color: blue` 的样式，设置字体颜色为蓝色，为 `p` 标签添加了一条 `text-align: right` 的样式，设置对齐方式为右对齐。
 
 <DisplayBox>
-<style scoped>
-    h1 {
-        color: blue;
-    }
-    .align-right {
-        text-align: right;
-    }
-</style>
-<div>
-    <h1>Hello World!</h1>
-    <p class="align-right">今天的天气真好</p>
-</div>
+<CSS-Demo-25></CSS-Demo-25>
 </DisplayBox>
+
+>注释：在上面的 `CSS` 代码中，我们混入了以下内容
+>
+>```css
+>h1 {
+>    color: blue; /* 设置一级标题的字体颜色为蓝色*/
+>}
+>p {
+>    text-align: right; /* 设置 p 中文本对齐的方式为右对齐 */
+>}
+>```
+>
+>其中在 `/*  */` 中的内容为注释，其中的内容是写给人看的，是为了帮助阅读代码的人搞懂代码的意思，浏览器会自动忽略注释。
 
 ## link标签
 
@@ -82,24 +83,8 @@ index.css
 
 `index.css` 为样式文件，它与 `index.html` 在同一个文件夹下面，我们现在需要在 `index.html` 中引入 `index.css`
 
-<CodeSwitcher :languages="{html: 'html',css: 'css'}">
-
-<template v-slot:css>
-
-```css
-/* index.css */
-h1 {
-    color: orange;
-}
-p {
-    font-size: 2em;
-}
-```
-
-</template>
-
-<template v-slot:html>
-
+<CodeGroup>
+<CodeGroupItem title="html" active>
 ```html
 <!-- index.html -->
 <!DOCTYPE html>
@@ -114,9 +99,20 @@ p {
 </body>
 </html>
 ```
+</CodeGroupItem>
 
-</template>
-</CodeSwitcher>
+<CodeGroupItem title="css">
+```css
+/* index.css */
+h1 {
+    color: orange;
+}
+p {
+    font-size: 2em;
+}
+```
+</CodeGroupItem>
+</CodeGroup>
 
 <DisplayBox>
 <style scoped>

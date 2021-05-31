@@ -1,7 +1,6 @@
 ---
 title: Java开发环境搭建
-category: JavaSE
-time: 2019-07-01
+author: 熊滔
 ---
 
 Java环境搭建分为三步：

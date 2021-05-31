@@ -1,3 +1,8 @@
+---
+title: MyBatis入门
+author: 熊滔
+---
+
 ## MyBatis入门
 
 新建Maven工程，在其中引入所需要的包，如mybatis, mysql-connector-java, junit。配置pom.xml如下

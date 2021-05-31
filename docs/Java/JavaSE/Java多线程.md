@@ -1,7 +1,6 @@
 ---
 title: Java多线程
-category: JavaSE
-date: 2019-07-13
+author: 熊滔
 ---
 
 ## 多线程概述

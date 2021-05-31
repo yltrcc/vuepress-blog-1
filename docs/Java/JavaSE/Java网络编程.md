@@ -1,7 +1,6 @@
 ---
 title: Java网络编程
-category: JavaSE
-time: 2019-07-26
+author: 熊滔
 ---
 
 网络编程主要是客户端与服务器之间的交互，与客户端有关的类是Socket，与服务器有关的类是ServerSocket。客户端与服务器之间的通信主要是通过字节流实现的，客户端Socket含有方法

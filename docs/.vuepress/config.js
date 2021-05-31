@@ -16,6 +16,9 @@ module.exports = config({
             md.use(require('markdown-it-katex'))
         }
     },
+    chainWebpack: config => {
+        config.resolve.alias.set('core-js/library/fn', 'core-js/features')
+    },
     themeConfig: {
         author: '熊滔',
         sidebar,
@@ -35,7 +38,8 @@ module.exports = config({
         ['disqus', {
             shortname: 'lastknightcoder'
         }],
-        "code-switcher"
+        "code-switcher",
+        "element-ui"
     ],
     base: '/vuepress-blog/',
     head: [
