@@ -338,6 +338,9 @@ module.exports = {
         children: [{
             title: 'x的平方根',
             path: 'x的平方根'
+        }, {
+            title: '搜索旋转排序数组II',
+            path: '搜索旋转排序数组II'
         }]
     }, {
         title: '双指针',
