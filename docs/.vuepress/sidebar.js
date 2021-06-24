@@ -321,6 +321,9 @@ module.exports = {
         children: [{
             title: '旋转链表',
             path: '旋转链表'
+        }, {
+            title: '删除排序链表中的重复元素II',
+            path: '删除排序链表中的重复元素II'
         }]
     }, {
         title: '集合',
