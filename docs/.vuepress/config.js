@@ -47,7 +47,7 @@ module.exports = config({
         ['disqus', {
             shortname: 'lastknightcoder'
         }],
-        "code-switcher",
+        // "code-switcher",
         "element-ui"
     ],
     base: '/vuepress-blog/',
