@@ -1057,6 +1057,4 @@ public class Doudizhu {
 <center>
     <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/Java22.gif"/>
 </center>
-
-
 <Disqus />

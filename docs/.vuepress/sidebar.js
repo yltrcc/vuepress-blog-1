@@ -429,6 +429,9 @@ module.exports = {
         }, {
             title: '单词搜索',
             path: '单词搜索'
+        }, {
+            title: '子集',
+            path: '子集'
         }]
     }],
     "/收藏/": [{
