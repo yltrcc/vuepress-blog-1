@@ -409,6 +409,9 @@ module.exports = {
         }, {
             title: '最小路径和',
             path: '最小路径和'
+        }, {
+            title: '解码方法',
+            path: '解码方法'
         }]
     }, {
         title: '贪心',
