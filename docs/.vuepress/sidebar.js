@@ -611,6 +611,12 @@ module.exports = {
             title: '柯里化',
             path: 'JavaScript柯里化'
         }, {
+            title: '防抖与节流',
+            path: '防抖与节流'
+        }, {
+            title: '访问对象中的属性',
+            path: '访问对象中的属性'
+        }, {
             title: '手写Promise',
             path: '手写Promise'
         }, {
@@ -661,8 +667,14 @@ module.exports = {
         title: '技术',
         collapsable: false,
         children: [{
-            title: '',
-            path: ''
+            title: '使用 Github Actions 部署 VuePress 博客',
+            path: '使用 Github Actions 部署 VuePress 博客'
+        }, {
+            title: '远程访问 jupyter',
+            path: '远程访问 jupyter'
+        }, {
+            title: '跑马灯动画',
+            path: '跑马灯动画'
         }]
     }],
     "/Java/": [{
