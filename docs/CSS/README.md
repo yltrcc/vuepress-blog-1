@@ -1,10 +1,12 @@
 目录：
 
-- CSS基础
-  - [CSS介绍](/vuepress-blog/CSS/CSS介绍)
-  - [选择器(一)](/vuepress-blog/CSS/选择器(一))
-  - [选择器(二)](/vuepress-blog/CSS/选择器(二))
-  - [层叠与优先级](/vuepress-blog/CSS/层叠与优先级)
-  - [盒子模型](/vuepress-blog/CSS/盒子模型)
+- 基础：选择器、层叠与优先级
+  - [CSS介绍](CSS介绍)
+  - [基本选择器](基本选择器)
+  - [组合选择器](组合选择器)
+  - [伪类选择器](伪类选择器)
+  - [层叠与优先级](层叠与优先级)
+  - [在浏览器中调试CSS](在浏览器中调试CSS)
 
 <Disqus />
+

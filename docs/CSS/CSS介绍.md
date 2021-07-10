@@ -4,8 +4,6 @@ author: 熊滔
 category: CSS
 ---
 
-
-
 `HTML` 为网页搭建好了骨架，但是这远远是不够的，我们要求页面应该美观，这就需要用到 `CSS`。`CSS` 全称为 Cascading Style Sheets，中文翻译过来为层叠样式表，它可以为标签添加样式，例如改变文字颜色，设置对齐方式等等。
 
 ## style属性
@@ -30,7 +28,7 @@ category: CSS
 
 ## style标签
 
-除了可以通过 `style` 属性添加标签，还可以通过 `style` 标签添加样式
+除了可以通过 `style` 属性添加样式，还可以通过 `style` 标签添加样式
 
 ```html {5-12}
 <!DOCTYPE html>
@@ -149,7 +147,7 @@ p {
 </style>
 ```
 
-除了可以在 `style` 标签中导入样式文件，还是在 `CSS` 文件中使用 `@import`
+除了可以在 `style` 标签中通过 `@import` 导入样式文件，还可以在 `CSS` 文件中使用 `@import`
 
 ```css
 /* main.css */
