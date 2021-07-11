@@ -1,0 +1,140 @@
+module.exports = [{
+    title: '数组',
+    collapsable: false,
+    children: [{
+        title: '删除有序数组中的重复项',
+        path: '删除有序数组中的重复项'
+    }]
+}, {
+    title: '栈',
+    collapsable: false,
+    children: [{
+        title: '包含min函数的栈',
+        path: '包含min函数的栈'
+    }]
+}, {
+    title: '队列',
+    collapsable: false,
+    children: []
+}, {
+    title: '链表',
+    collapsable: false,
+    children: [{
+        title: '旋转链表',
+        path: '旋转链表'
+    }, {
+        title: '删除排序链表中的重复元素II',
+        path: '删除排序链表中的重复元素II'
+    }]
+}, {
+    title: '集合',
+    collapsable: false,
+    children: [{
+        title: '两数之和',
+        path: '两数之和'
+    }, {
+        title: '字母异位词分组',
+        path: '字母异位词分组'
+    }]
+}, {
+    title: '二分查找',
+    collapsable: false,
+    children: [{
+        title: 'x的平方根',
+        path: 'x的平方根'
+    }, {
+        title: '搜索旋转排序数组II',
+        path: '搜索旋转排序数组II'
+    }]
+}, {
+    title: '双指针',
+    collapsable: false,
+    children: [{
+        title: '两数之和',
+        path: '两数之和'
+    }, {
+        title: '三数之和',
+        path: '三数之和'
+    }, {
+        title: '盛水最多的容器',
+        path: '盛水最多的容器'
+    }, {
+        title: '合并区间',
+        path: '合并区间'
+    }, {
+        title: '删除有序数组中的重复项',
+        path: '删除有序数组中的重复项'
+    }, {
+        title: '外观数列',
+        path: '外观数列'
+    }]
+}, {
+    title: '滑动窗口',
+    collapsable: false,
+    children: []
+}, {
+    title: '字符串',
+    collapsable: false,
+    children: [{
+        title: '罗马数字与数字的转换',
+        path: '罗马数字与数字的转换'
+    }, {
+        title: '最长回文字符串',
+        path: '最长回文字符串'
+    }, {
+        title: '简化路径',
+        path: '简化路径'
+    }]
+}, {
+    title: '分治',
+    collapsable: false,
+    children: [{
+        title: '合并K个升序链表',
+        path: '合并K个升序链表'
+    }, {
+        title: 'Pow(x,n)',
+        path: 'Pow(x,n)'
+    }]
+}, {
+    title: '动态规划',
+    collapsable: false,
+    children: [{
+        title: '跳跃游戏II',
+        path: '跳跃游戏II'
+    }, {
+        title: '最大子序和',
+        path: '最大子序和'
+    }, {
+        title: '不同路径',
+        path: '不同路径'
+    }, {
+        title: '最小路径和',
+        path: '最小路径和'
+    }, {
+        title: '解码方法',
+        path: '解码方法'
+    }]
+}, {
+    title: '贪心',
+    collapsable: false,
+    children: []
+}, {
+    title: '回溯',
+    collapsable: false,
+    children: [{
+        title: '全排列',
+        path: '全排列'
+    }, {
+        title: '组合总数',
+        path: '组合总数'
+    }, {
+        title: '组合',
+        path: '组合'
+    }, {
+        title: '单词搜索',
+        path: '单词搜索'
+    }, {
+        title: '子集',
+        path: '子集'
+    }]
+}]

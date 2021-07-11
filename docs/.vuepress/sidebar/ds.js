@@ -1,0 +1,92 @@
+module.exports = [{
+    title: "线性结构",
+    collapsable: false,
+    children: [{
+        title: '动态数组',
+        path: '动态数组'
+    }, {
+        title: '栈',
+        path: '栈'
+    }, {
+        title: '队列',
+        path: '队列'
+    }, {
+        title: '链表',
+        path: '链表'
+    }]
+}, {
+    title: "树",
+    collapsable: false,
+    children: [{
+        title: '二分搜索树',
+        path: '二分搜索树'
+    }, {
+        title: '优先队列和堆',
+        path: '优先队列和堆'
+    }, {
+        title: '线段树',
+        path: '线段树'
+    }, {
+        title: 'Trie',
+        path: 'Trie'
+    }, {
+        title: '并查集',
+        path: '并查集'
+    }, {
+        title: 'AVL树',
+        path: 'AVL树'
+    }, {
+        title: '红黑树',
+        path: '红黑树'
+    }]
+}, {
+    title: '哈希表',
+    collapsable: false,
+    children: [{
+        title: '哈希表',
+        path: '哈希表'
+    }]
+}, {
+    title: "图",
+    collapsable: false,
+    children: [{
+        title: '图论前言',
+        path: '图论前言'
+    }, {
+        title: '图的表示',
+        path: '图的表示'
+    }, {
+        title: '图的深度优先遍历',
+        path: '图的深度优先遍历'
+    }, {
+        title: '图的广度优先遍历',
+        path: '图的广度优先遍历'
+    }, {
+        title: '图论建模',
+        path: '图论建模'
+    }, {
+        title: '桥和割点',
+        path: '桥和割点'
+    }, {
+        title: '哈密尔顿回路',
+        path: '哈密尔顿回路'
+    }, {
+        title: '欧拉回路',
+        path: '欧拉回路'
+    }, {
+        title: '最小生成树',
+        path: '最小生成树'
+    }, {
+        title: '最短路径算法',
+        path: '最短路径算法'
+    }, {
+        title: '有向图算法',
+        path: '有向图算法'
+    }, {
+        title: '网络流与最大流',
+        path: '网络流与最大流'
+    }, {
+        title: '匹配问题',
+        path: '匹配问题'
+    }]
+}]
