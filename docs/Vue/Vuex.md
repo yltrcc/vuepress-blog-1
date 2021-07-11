@@ -582,7 +582,7 @@ computed: {
 }
 ```
 
-`maoState` 方法还可以接收一个对象来定义映射关系
+`mapState` 方法还可以接收一个对象来定义映射关系
 
 ```javascript
 ...mapState({
@@ -606,7 +606,7 @@ computed: {
 
 ```javascript
 computed: {
-    ...mapGetters({
+  ...mapGetters({
     dones: 'doneTodos' // this.$store.getters.doneTodos => this.dones
   })
 },
@@ -638,13 +638,14 @@ methods: {
 
 ## 插件
 
-我们创建 `store` 时，还可以传入一个 `plugins` 选项，使得我们可以为 `Vuex` 添加插件。`Vuex` 插件就是一个函数，它接收 `store` 作为唯一的参数，`plugins` 为我们暴露出每次 `mutation` 的钩子
+我们创建 `store` 时，还可以传入一个 `plugins` 选项，使得我们可以为 `Vuex` 添加插件。`Vuex` 插件就是一个函数，它接收 `store` 作为唯一的参数，`plugins` 为我们暴露出每次触发 `mutation` 的钩子
 
 ```javascript
 const persist = store => {
-    // store 初始化后调用
+    // store 初始化后执行
+
     store.subscribe((mtation, state) => {
-        // 每次 mutation 后调用
+        // 每次触发 mutation 后执行
     })
 }
 ```
@@ -653,14 +654,14 @@ const persist = store => {
 
 ```javascript
 const persist = store => {
-    // store 初始化后调用
+    // store 初始化后执行
     const state = localStorage.getItem('state')
     if(state != null) {
         store.replaceState(JSON.parse(state))
     }
 
     store.subscribe((mtation, state) => {
-        // 每次 mutation 后调用
+        // 每次触发 mutation 后执行
         localStorage.setItem('state', JSON.stringify(state))
     })
 }

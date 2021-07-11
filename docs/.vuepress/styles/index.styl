@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap')
 @import "//at.alicdn.com/t/font_2352663_8bv8dbkn0yh.css"
+
+@font-face
+  font-family: '思源宋体'
+  src: url("/public/fonts/SourceHanSerifSC-Regular.otf")
+  font-weight: normal
+  font-style: normal
 
 :root
     --boxes: #f5f7f9
@@ -7,8 +14,8 @@
     --bg-color: white
     --heading-char-color: #9daab6
     --boxes-darker2: #bac2c9
-    --font: "Merriweather", /*"思源宋体",*/ "楷体", '楷体-简'!important
-    --code-font: 'Source Code Pro', "Fira Code", "Consolas", /*"思源宋体",*/ "楷体", '楷体-简'
+    --font: "Merriweather", '楷体', '楷体-简', '思源宋体' !important
+    --code-font: 'Source Code Pro', "Fira Code", "Consolas", "楷体", '楷体-简', "思源宋体"
 
 img
     display: block
@@ -62,7 +69,7 @@ select
   outline: none
 
 select[multiple]
-  height: 5rem
+  height: 6rem
 
 iframe 
   border: none

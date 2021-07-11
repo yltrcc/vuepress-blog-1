@@ -221,7 +221,7 @@ use: ["style-loader", "css-loader"]
 除了处理 `CSS` 文件，有时候我们会使用 `less` `sass/scss` 编写样式，但是这些文件浏览器不能解析，所以我们需要使用相应的 `loader` 将 `less` `sass/scss` 转为 `CSS` 文件，例如 `less-loader` `sass-loader`
 
 ```bash
-npm install less less-loader node-sass sass-loader --save-dev
+npm install less less-loader sass sass-loader --save-dev
 ```
 
 接着我们在 `webpack.config.js` 中添加相应的配置

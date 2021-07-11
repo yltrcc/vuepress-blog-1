@@ -96,7 +96,7 @@ new Vue({
 }).$mount('#app')
 ```
 
-就是引入了 `App.vue` 组件，并把该组件挂载在了 `id` 为 `app` 元素上，`App.vue` 的内容如下
+上面代码做的事情为引入了 `App.vue` 组件，并把该组件挂载在了 `id` 为 `app` 元素上，`App.vue` 的内容如下
 
 ```vue
 <template>
@@ -129,13 +129,13 @@ export default {
 </style>
 ```
 
-`.vue` 文件由三部分组成
+为了理解上面的内容，我们首先说明一下 `.vue` 文件的组成，一般分为如下三部分
 
-- template：定义模板内容
-- script：在其中定义数据，计算属性，方法，生命周期方法等等
-- style：定义组件样式
+- `template`：定义模板内容
+- `script`：定义数据，计算属性，方法，生命周期方法等等
+- `style`：定义组件样式
 
-在 `App.vue` 中又引入了 `HelloWorld.vue`，因为 `HelloWorld.vue` 的内容比较复杂，这里就不展示了，我们来看渲染后的页面是什么样子，在命令行输入
+通过 `App.vue` 的内容可以知道，在 `App.vue` 中又引入了 `HelloWorld.vue`，因为 `HelloWorld.vue` 的内容比较复杂，这里就不展示了，我们来看渲染后的页面是什么样子，在命令行输入
 
 ```bash
 npm run serve
@@ -469,7 +469,7 @@ export default {
 
 ### Module CSS
 
-另一种比较流行的方案是 `CSS in JS`，也就是 `Module CSS`，首先我们需要为 `style` 标签添加了 `module` 标签
+另一种比较流行的方案是 `CSS in JS`，也就是 `Module CSS`，首先我们需要为 `style` 标签添加 `module` 属性
 
 ```vue
 <style module>
