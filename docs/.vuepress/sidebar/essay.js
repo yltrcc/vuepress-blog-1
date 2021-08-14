@@ -17,5 +17,8 @@ module.exports = [{
     }, {
         title: '跑马灯动画',
         path: '跑马灯动画'
+    }, {
+        title: '渐变色的妙用',
+        path: '渐变色的妙用'
     }]
 }]
