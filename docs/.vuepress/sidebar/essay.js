@@ -20,5 +20,8 @@ module.exports = [{
     }, {
         title: '渐变色的妙用',
         path: '渐变色的妙用'
+    }, {
+        title: 'Canvas',
+        path: 'Canvas'
     }]
 }]
