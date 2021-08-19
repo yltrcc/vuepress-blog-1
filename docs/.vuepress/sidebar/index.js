@@ -14,6 +14,7 @@ const JavaScript = require('./JavaScript.js')
 const CSS = require('./CSS.js')
 const essay = require('./essay.js')
 const Java = require('./Java.js')
+const canvas = require('./canvas.js')
 
 module.exports = {
     "/Node/": Node,
@@ -31,5 +32,6 @@ module.exports = {
     "/JavaScript/": JavaScript,
     "/CSS/": CSS,
     "/随笔/": essay,
-    "/Java/": Java
+    "/Java/": Java,
+    "/Canvas/": canvas
 }

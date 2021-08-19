@@ -53,6 +53,10 @@ module.exports = [{
         text: "Vue",
         link: "/Vue/",
         icon: "Vue"
+    }, {
+        text: 'Canvas',
+        link: '/Canvas/',
+        icon: 'canvas'
     }]
 }, {
     text: "Java",
