@@ -38,5 +38,8 @@ module.exports = [{
     }, {
         title: 'Vuex',
         path: 'Vuex'
+    }, {
+        title: '虚拟DOM更新过程',
+        path: '虚拟DOM更新过程'
     }]
 }]
