@@ -14,7 +14,7 @@ const JavaScript = require('./JavaScript.js')
 const CSS = require('./CSS.js')
 const Essay = require('./essay.js')
 const Java = require('./Java.js')
-const Canvas = require('./Canvas.js')
+const Canvas = require('./canvas.js')
 
 module.exports = {
     "/Node/": Node,
