@@ -11,6 +11,9 @@ module.exports = [{
     children: [{
         title: '包含min函数的栈',
         path: '包含min函数的栈'
+    }, {
+        title: '反转链表',
+        path: '反转链表'
     }]
 }, {
     title: '队列',
@@ -25,6 +28,9 @@ module.exports = [{
     }, {
         title: '删除排序链表中的重复元素II',
         path: '删除排序链表中的重复元素II'
+    }, {
+        title: '反转链表',
+        path: '反转链表'
     }]
 }, {
     title: '集合',

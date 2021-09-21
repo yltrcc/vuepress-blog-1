@@ -38,7 +38,7 @@ category: LeetCode
 
 <img src="https://user-images.githubusercontent.com/29890094/122769607-45748d80-d2d7-11eb-949a-c85cad057448.png" style="zoom: 50%;" />
 
-所以现在的关键是如何寻找到哪一部分有序，我们比较划分的那个店 `mid` 与 `start` 的大小
+所以现在的关键是如何寻找到哪一部分有序，我们比较划分的那个点 `mid` 与 `start` 的大小
 
 - `nums[mid] > nums[start]`：左边有序
 - `nums[mid] < nums[start]`：右边有序
