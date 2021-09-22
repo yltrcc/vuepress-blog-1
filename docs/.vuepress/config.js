@@ -38,8 +38,6 @@ module.exports = config({
             demo: true,
             mermaid: true
         },
-        feed: false,
-        hostname: ''
     },
     plugins: [
         "@vuepress/nprogress",

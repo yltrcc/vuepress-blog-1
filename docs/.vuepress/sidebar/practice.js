@@ -90,6 +90,9 @@ module.exports = [{
     }, {
         title: '简化路径',
         path: '简化路径'
+    }, {
+        title: '复原IP地址',
+        path: '复原IP地址'
     }]
 }, {
     title: '分治',
