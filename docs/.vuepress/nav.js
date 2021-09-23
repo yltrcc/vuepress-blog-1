@@ -71,6 +71,14 @@ module.exports = [{
         icon: "Spring"
     }]
 }, {
+    text: "Python",
+    icon: "python",
+    items: [{
+        text: "基础语法",
+        link: "/Python/基础语法/",
+        icon: "basis"
+    }]
+}, {
     text: '数据库',
     icon: 'shujuku',
     items: [{
