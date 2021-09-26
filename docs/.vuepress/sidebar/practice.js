@@ -103,6 +103,9 @@ module.exports = [{
     }, {
         title: 'Pow(x,n)',
         path: 'Pow(x,n)'
+    }, {
+        title: '不同的二叉搜索树II',
+        path: '不同的二叉搜索树II'
     }]
 }, {
     title: '动态规划',
