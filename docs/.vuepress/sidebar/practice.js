@@ -122,6 +122,9 @@ module.exports = [{
     }, {
         title: '解码方法',
         path: '解码方法'
+    }, {
+        title: '不同的二叉搜索树',
+        path: '不同的二叉搜索树'
     }]
 }, {
     title: '贪心',
