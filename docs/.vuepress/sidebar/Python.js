@@ -10,5 +10,8 @@ module.exports = [{
   }, {
     title: "变量",
     path: "基础语法/变量"
+  }, {
+    title: '注释',
+    path: '基础语法/注释'
   }]
 }]
