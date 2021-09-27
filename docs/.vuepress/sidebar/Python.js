@@ -13,5 +13,8 @@ module.exports = [{
   }, {
     title: '注释',
     path: '基础语法/注释'
+  }, {
+    title: '数据类型',
+    path: '数据类型'
   }]
 }]

@@ -128,6 +128,9 @@ module.exports = [{
     }, {
         title: '不同的二叉搜索树',
         path: '不同的二叉搜索树'
+    }, {
+        title: '交错字符串',
+        path: '交错字符串'
     }]
 }, {
     title: '贪心',
