@@ -24,4 +24,11 @@ module.exports = [{
         title: 'WSL安装及zsh配置',
         path: 'WSL安装及zsh配置'
     }]
+}, {
+    title: '随笔',
+    collapsable: false,
+    children: [{
+        title: '从手抄笔记到个人博客',
+        path: '从手抄笔记到个人博客'
+    }]
 }]
