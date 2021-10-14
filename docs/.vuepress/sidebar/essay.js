@@ -4,6 +4,9 @@ module.exports = [{
     children: [{
         title: '小球会停下来吗',
         path: '小球会停下来吗'
+    }, {
+        title: '学习流程思考',
+        path: '学习流程思考'
     }]
 }, {
     title: '技术',
@@ -23,6 +26,9 @@ module.exports = [{
     }, {
         title: 'WSL安装及zsh配置',
         path: 'WSL安装及zsh配置'
+    }, {
+        title: '使用Notion作为视频托管',
+        path: '使用Notion作为视频托管'
     }]
 }, {
     title: '随笔',
