@@ -59,24 +59,28 @@ module.exports = [{
         icon: 'canvas'
     }]
 }, {
-    text: "Java",
-    icon: "Java",
+    text: "编程语言",
+    icon: "programming",
     items: [{
-        text: "JavaSE",
-        link: "/Java/JavaSE/",
-        icon: "JavaSE"
+        text: "Java",
+        icon: "Java",
+        items: [{
+            text: "JavaSE",
+            link: "/Java/JavaSE/",
+            icon: "JavaSE"
+        }, {
+            text: "JavaEE",
+            link: "/Java/JavaEE/",
+            icon: "Spring"
+        }]
     }, {
-        text: "JavaEE",
-        link: "/Java/JavaEE/",
-        icon: "Spring"
-    }]
-}, {
-    text: "Python",
-    icon: "python",
-    items: [{
-        text: "基础语法",
-        link: "/Python/基础语法/",
-        icon: "basis"
+        text: "Python",
+        icon: "python",
+        items: [{
+            text: "基础语法",
+            link: "/Python/基础语法/",
+            icon: "basis"
+        }]
     }]
 }, {
     text: '数据库',

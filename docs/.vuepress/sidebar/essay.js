@@ -37,4 +37,11 @@ module.exports = [{
         title: '从手抄笔记到个人博客',
         path: '从手抄笔记到个人博客'
     }]
+}, {
+    title: '翻译',
+    collapsable: false,
+    children: [{
+        title: 'HTTP/2之旅',
+        path: 'HTTP2之旅'
+    }]
 }]
