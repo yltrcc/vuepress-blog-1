@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@notionhq/client": "^0.4.3",
     "vuepress": "^1.8.0",
     "vuepress-plugin-viewer": "^1.0.0"
   },

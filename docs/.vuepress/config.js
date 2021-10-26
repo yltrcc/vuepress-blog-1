@@ -23,6 +23,7 @@ module.exports = config({
         author: '熊滔',
         sidebar,
         nav,
+        hostname: 'https://lastknightcoder.github.io/vuepress-blog',
         iconPrefix: "icon-",
         docsBranch: 'master',
         docsDir: 'docs',
@@ -30,13 +31,14 @@ module.exports = config({
         editLinks: true,
         prevLinks: true,
         nextLinks: true,
+        feed: false,
         mdEnhance: {
-            align: true,
-            flowchart: true,
+            align: false,
+            flowchart: false,
             tex: false,
             lineNumbers: false,
-            demo: true,
-            mermaid: true
+            mermaid: false,
+            tasklist: true
         },
     },
     plugins: [
