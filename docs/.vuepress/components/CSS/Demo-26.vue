@@ -7,7 +7,6 @@
 
 <style scoped>
 input {
-    font-family: Merriweather;
     border: 0;
     border-bottom: 2px solid black;
     outline: none;
@@ -16,6 +15,6 @@ input {
 
 input:focus {
     color: #579572;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 </style>

@@ -36,6 +36,9 @@ module.exports = [{
     children: [{
         title: '从手抄笔记到个人博客',
         path: '从手抄笔记到个人博客'
+    }, {
+        title: '我是如何成为一名程序员的',
+        path: '我是如何成为一名程序员的'
     }]
 }, {
     title: '翻译',

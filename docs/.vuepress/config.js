@@ -47,7 +47,11 @@ module.exports = config({
         ['disqus', {
             shortname: 'lastknightcoder'
         }],
-        "element-ui"
+        "element-ui",
+        ['run', {
+            jsLabs: ['https://unpkg.com/element-ui/lib/index.js'],
+            cssLabs: ['https://unpkg.com/element-ui/lib/theme-chalk/index.css'],
+        }]
     ],
     base: '/vuepress-blog/',
     head: [
