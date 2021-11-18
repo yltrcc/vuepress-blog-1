@@ -2,7 +2,6 @@
     <div>
         用户名：<input type="text" placeholder="用户名为6-10位字符"  required pattern="^[a-z|A-Z]{6,10}$" /><br>
         密码：<input type="password" placeholder="密码为6位数字"  required pattern="^\d{6}" /><br>
-        地址：<input type="text" /><br>
     </div>
 </template>
 
