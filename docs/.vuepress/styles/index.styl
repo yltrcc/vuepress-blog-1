@@ -12,32 +12,48 @@
 
 body.theme-light
   --code-bgcolor: #fafafa
-body:not(.theme-dark) .code-group-nav, body.theme-light .code-group-nav
+body:not(.theme-dark) .code-group-nav, 
+body.theme-light .code-group-nav
   background-color: #fff
-body:not(.theme-dark) .code-group-nav-tab.active, body.theme-light .code-group-nav-tab.active
+body:not(.theme-dark) .code-group-nav-tab.active, 
+body.theme-light .code-group-nav-tab.active
   background-color: #fafafa
-body:not(.theme-dark) .code-group-nav-tab:hover, body.theme-light .code-group-nav-tab:hover
+body:not(.theme-dark) .code-group-nav-tab:hover, 
+body.theme-light .code-group-nav-tab:hover
   background-color: transparent
-body:not(.theme-dark) .code-group-nav-tab.active:after, body.theme-light .code-group-nav-tab.active:after,
-body:not(.theme-dark) .code-group-nav-tab.active:before, body.theme-light .code-group-nav-tab.active:before,
-body.theme-dark .code-group-nav-tab.active:before,
-body.theme-dark .code-group-nav-tab.active:after
-  display: none
+
+body:not(.theme-dark) .code-group-nav-tab.active:before, 
+body.theme-light .code-group-nav-tab.active:before,
+body:not(.theme-dark) .code-group-nav-tab.active:after, 
+body.theme-light .code-group-nav-tab.active:after
+  background: transparent
+
+body:not(.theme-dark) .theme-default-content p code,
+body:not(.theme-dark) .theme-default-content li code,
+body.theme-light .theme-default-content p code,
+body.theme-light .theme-default-content li code,
+body.theme-dark .theme-default-content :where(p, li) code
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59) !important
+  -webkit-background-clip: text !important
+  color: transparent
+  font-weight: 1000
+
+code
+  font-weight: 1000
 
 img
   display: block
   max-width: 100%
   margin: 0 auto
 
-body
+body, input, button
   font-family: var(--font)
 
 .page .page-info,
 .page-nav,
 .code-group-nav-tab,
 .page-meta,
-.vue-run-sfc-header-button,
-input
+.vue-run-sfc-header-button
   font-family: var(--font)!important
 
 code, 

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <video ref="video" controls></video>
+  <div class="video-container">
+    <video ref="video" controls width="100%" height="100%"></video>
   </div>
 </template>
 
@@ -29,9 +29,19 @@ export default {
 </script>
 
 <style scoped>
+.video-container {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
 video {
-  max-width: 100%;
-  object-fit: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  /* object-fit: contain; */
   border-radius: 5px;
 }
 </style>

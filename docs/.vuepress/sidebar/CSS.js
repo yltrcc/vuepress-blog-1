@@ -11,8 +11,11 @@ module.exports = [{
         title: '组合选择器',
         path: '组合选择器'
     }, {
-        title: '伪类选择器',
-        path: '伪类选择器'
+        title: '伪类选择器(一)',
+        path: '伪类选择器(一)'
+    }, {
+        title: '伪类选择器(二)',
+        path: '伪类选择器(二)'
     }, {
         title: '层叠与优先级',
         path: '层叠与优先级'

@@ -14,7 +14,6 @@ input {
 }
 
 input:focus {
-    color: #579572;
-    /* font-weight: bold; */
+    color: pink;
 }
 </style>
