@@ -3,6 +3,7 @@ title: DQL
 time: 2019-10-20
 category: MySQL
 author: 熊滔
+commentid: mysql:dql
 ---
 
 查询数据的基本语法为

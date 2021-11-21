@@ -3,6 +3,7 @@ title: 用DFT计算线性卷积
 author: 熊滔
 time: 2021-04-03
 category: 数字信号处理
+commentid: signal-process:dft-juanji
 ---
 
 ## 两有限长序列之间的卷积

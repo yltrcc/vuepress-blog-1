@@ -3,6 +3,7 @@ title: Vue带来的开发思维的改变
 time: 2021-03-29
 author: 熊滔
 category: Vue
+commentid: vue:think-change
 ---
 
 假设有这么一个要求，要我们根据一个数组渲染出一个列表，对于下面的数组
@@ -65,4 +66,3 @@ document.body.append(ulEle);
 
 所以 Vue 给我们带来开发思维上的改变就是，**我们只需要操作数据即可，更新页面的工作 Vue 会自动的帮我们完成**
 
-<Disqus />

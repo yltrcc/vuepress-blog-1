@@ -6,6 +6,7 @@ tags:
   - Express
   - 中间件
 author: 熊滔
+commentid: node:express
 ---
 
 Express 是基于 Node.js 的 Web 框架，通过 Express 可以快速的搭建一个 Web 应用。
@@ -198,4 +199,3 @@ app.post("/",(req, res) => {
 - [Express官网](https://expressjs.com/zh-cn/)
 - [body-parser 使用详解](https://www.jianshu.com/p/4ebcc5acff45)
 
-<Disqus />

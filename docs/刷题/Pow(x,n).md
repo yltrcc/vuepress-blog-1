@@ -2,6 +2,7 @@
 title: Pow(x,n)
 author: 熊滔
 category: LeetCode
+commentid: leetcode:Pow(x,n)
 ---
 
 ## 题目描述
@@ -96,4 +97,3 @@ private double myPowWithPositiveExp(double x, int n) {
 
 - #### [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
 
-<Disqus />

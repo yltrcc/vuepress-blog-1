@@ -3,6 +3,7 @@ title: Vue Router
 author: 熊滔
 time: 2021-04-02
 category: Vue
+commentid: vue:vuerotuer
 ---
 
 `Vue` 经常被用来构建单页应用，这意味着需要在前端完成在多个视图之间的切换，想要做到这一点，目前的解决方案通过监控路由，根据路由来切换不同的组件，以达到多视图的切换。`Vue` 官方为我们提供了 `Vue Router` 来帮助我们实现这个目的。
@@ -579,4 +580,3 @@ const routes = [{
 
 - [Vue Router 官方文档](https://router.vuejs.org/zh/guide/)
 
-<Disqus />

@@ -3,6 +3,7 @@ title: Vuex
 time: 2021-04-05
 author: 熊滔
 category: Vue
+commentid: vue:vuex
 ---
 
 以前我们数据的获取一般都是通过父组件向子组件数据，或者通过向子组件注册自定义事件，使得子组件向父组件传递数据。如果组件的层级比较深，组件数据的传递跨越多个层级，那么无论是从父组件传递数据到子组件，还是从子组件传递数据到父组件，都会写出难看的代码。
@@ -684,4 +685,3 @@ const store = new Vuex.Store({
 
 - [Vuex官方文档](https://vuex.vuejs.org/zh/guide/)
 
-<Disqus />

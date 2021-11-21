@@ -1,6 +1,7 @@
 ---
 title: ES6
 author: 熊滔
+comment: false
 ---
 
 目录：
@@ -19,4 +20,3 @@ author: 熊滔
 - [Proxy和Reflect](/vuepress-blog/ES6/Proxy和Reflect)
 - [用模块封装代码](/vuepress-blog/ES6/用模块封装代码)
 
-<Disqus />

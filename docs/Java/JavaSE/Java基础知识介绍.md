@@ -1,6 +1,7 @@
 ---
 title: Java基础知识介绍
 author: 熊滔
+commentid: javase:basic-introduce
 ---
 
 ## 第一个程序: HelloWorld

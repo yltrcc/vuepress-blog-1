@@ -3,6 +3,7 @@ title: DDL
 time: 2019-10-20
 category: MySQL
 author: 熊滔
+commentid: mysql:ddl
 ---
 
 这里来介绍操作数据库和表的 `SQL` 语句，这些操作一般就是 `C(Create), R(Retrieve), U(Update), D(Delete)`。

@@ -3,6 +3,7 @@ title: 不同的二叉搜索树II
 author: 熊滔
 category: LeetCode
 time: 2021-09-26
+commentid: leetcode:不同的二叉搜索树II
 ---
 
 ## 题目描述

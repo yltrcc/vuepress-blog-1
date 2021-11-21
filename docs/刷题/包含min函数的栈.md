@@ -2,6 +2,7 @@
 title: 包含min函数的栈
 author: 熊滔
 category: 剑指offer
+commentid: leetcode:包含min函数的栈
 ---
 ## 题目描述
 
@@ -61,4 +62,3 @@ public class StackWithMin {
 
 
 
-<Disqus />

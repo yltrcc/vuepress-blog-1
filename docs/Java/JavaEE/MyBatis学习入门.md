@@ -1,6 +1,7 @@
 ---
 title: MyBatis学习入门
 author: 熊滔
+commentid: javaee:mybatis
 ---
 
 ## MyBatis入门

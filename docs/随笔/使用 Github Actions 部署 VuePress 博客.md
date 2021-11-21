@@ -1,6 +1,7 @@
 ---
 title: 使用 Github Actions 部署 VuePress 博客
 author: 熊滔
+commentid: essay:github-actions
 ---
 
 随着我 `VuePress` 博客中的东西越来越多，每次我打包好项目然后上传到 `Github` 上需要好一会儿时间，之前在一些文章中知道 `Github Actions` 可以帮我自动部署项目，正好今天尝试尝试。

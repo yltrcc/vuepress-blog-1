@@ -1,6 +1,7 @@
 ---
 title: SSM整合
 author: 熊滔
+commentid: javaee:ssm-integrated
 ---
 
 在学习完Spring, SpringMVC, MyBatis三大框架后，现在将记录如何整合这三个框架。

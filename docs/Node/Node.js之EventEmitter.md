@@ -5,6 +5,7 @@ category: Node
 tags:
   - EventEmitter
 author: 熊滔
+commentid: node:eventemitter
 ---
 
 ## EventEmitter 的使用
@@ -834,4 +835,3 @@ class EventEmitter {
 - [How to code your own event emitter in Node.js: a step-by-step guide](https://www.freecodecamp.org/news/how-to-code-your-own-event-emitter-in-node-js-a-step-by-step-guide-e13b7e7908e1/)
 - [Nodejs|Events](https://nodejs.org/api/events.html)
 
-<Disqus />

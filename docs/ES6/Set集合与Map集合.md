@@ -6,6 +6,7 @@ tags:
   - Map
 time: 2020-12-28
 author: 熊滔
+commentid: es6:set-and-map
 ---
 
 在 ES6 以前，JavaScript 只有数组这一种集合来存储数据(当然有的人会使用对象来存储数据)，在 ES6 中引入了两种新的集合来存储数据，它们是 Set 和 Map：
@@ -370,4 +371,3 @@ WeakMap 具有如下限制：
 - 没有 size 属性，无 clear 方法
 - 无法使用 forEach 循环，不可迭代
 
-<Disqus />

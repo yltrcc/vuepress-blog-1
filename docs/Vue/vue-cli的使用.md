@@ -3,6 +3,7 @@ title: vue-cli的使用
 time: 2021-04-02
 author: 熊滔
 category: Vue
+commentid: vue:vue-cli-start
 ---
 
 在之前使用 `Vue` 的过程，我们所有的代码都是放在一个 `script` 标签中，所有的代码放在一起，势必会带来维护上的困难，另外，现如今的软件开发模式，都是多人协作，所有的代码都放在一起，也会给多人协作带来困扰，我们需要更加工程的方式来写 `Vue` 代码。
@@ -518,4 +519,3 @@ created() {
 
 - [Vue Cli官网文档](https://cli.vuejs.org/zh/guide/)
 
-<Disqus />

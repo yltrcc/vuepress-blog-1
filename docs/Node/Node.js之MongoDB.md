@@ -6,6 +6,7 @@ tags:
   - MongoDB
   - mongoose
 author: 熊滔
+commentid: node:mongodb
 ---
 
 本章讲解如何使用 Node.js 操作 MongoDB 数据库。分为两部分
@@ -605,4 +606,3 @@ StudentModel.findByIdAndDelete("603a5b85606f6555b0151f65").exec();
 - [一篇文章带你入门 Mongoose](https://segmentfault.com/a/1190000012095054)
 
 
-<Disqus />

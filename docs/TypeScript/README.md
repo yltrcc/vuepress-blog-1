@@ -1,6 +1,7 @@
 ---
 title: TypeScript
 author: 熊滔
+comment: false
 ---
 
 目录：
@@ -20,4 +21,3 @@ author: 熊滔
 - [TypeScript入门教程](https://ts.xcatliu.com/)
 - [TypeScript安利指南](https://juejin.im/post/5d8efeace51d45782b0c1bd6)
 
-<Disqus />

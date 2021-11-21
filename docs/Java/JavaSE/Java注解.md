@@ -1,6 +1,7 @@
 ---
 title: Java注解
 author: 熊滔
+commentid: javase:annotation
 ---
 
 我们在之前就有接触过注解，比如@Override，它可以帮我们检查是否重写了方法，如果没有，它在编译阶段就会报错。注解一般有下面三个功能

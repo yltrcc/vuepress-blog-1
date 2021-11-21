@@ -1,3 +1,9 @@
+---
+title: JavaScript闭包
+author: 熊滔
+commentid: javascript:closure
+---
+
 ## JavaScript的作用域
 
 `JavaScript` 的作用域有两种
@@ -213,4 +219,3 @@ document.getElementById("box2").addEventListener('click', function () {
 
 
 
-<Disqus />

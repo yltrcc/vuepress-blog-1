@@ -1,6 +1,7 @@
 ---
 title: Vue目录
 author: 熊滔
+comment: false
 ---
 
 目录：
@@ -22,4 +23,3 @@ author: 熊滔
 
 - [Vue官方文档](https://cn.vuejs.org/v2/guide/transitions.html)
 
-<Disqus />

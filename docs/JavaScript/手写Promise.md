@@ -1,3 +1,9 @@
+---
+title: 手写Promise
+author: 熊滔
+commentid: javascript:write-promise
+---
+
 ## Promise的使用
 
 ### 回调地狱
@@ -887,4 +893,3 @@ class Promise {
 - [图解 Promise 实现原理（四）：Promise 静态方法实现](https://mp.weixin.qq.com/s?__biz=MzA5NTcxOTcyMg==&mid=2247486839&idx=1&sn=5e9d85a70e9f85c94250a8c1c86772ca&chksm=90ba5532a7cddc24535cfc80fe892ffa34ff3a9638fbc1e9810ebab3c35784402968f9a65d44&scene=126&sessionid=1593161282&key=e82ba7b3cce71606a4cce70ca930ac7d6b61a05729ee3144ff9c5ccd0f54be407ea3ba04542163e11032e315e329bcf1536ceaf16ef408d759adda51f9d1ed57c083e30ba375fa10862d7e6705e0942d&ascene=1&uin=MTc3NjQ2ODM3NQ%3D%3D&devicetype=Windows+10+x64&version=6209007b&lang=zh_CN&exportkey=AWZmv5R1eG3cSK0W44%2F8fyM%3D&pass_ticket=uTkleeK9zg7mTbWWYlCzmyU6cReKuc7iYYllvVI7AfOrz4Zh0w9gvqjsFpKY5qNq)
 - [Promise.all和Promise.race源码实现](https://juejin.im/post/5d3f0a38f265da03bb4a81ff)
 
-<Disqus />

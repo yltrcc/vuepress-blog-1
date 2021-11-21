@@ -2,6 +2,7 @@
 title: HTML
 time: 2021-04-10
 author: 熊滔
+comment: false
 ---
 
 目录：
@@ -17,8 +18,7 @@ author: 熊滔
 - [div和span](vuepress-blog/HTML/div和span)
 - [语义化标签](vuepress-blog/HTML/语义化标签)
 
-<Disqus />
 
 
 
-<Disqus />
+

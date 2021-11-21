@@ -5,6 +5,7 @@ category: Node
 tags:
   - path
 author: 熊滔
+commentid: node:path
 ---
 
 
@@ -280,4 +281,3 @@ console.log(path.sep); // \
 console.log(path.delimiter); // ;
 ```
 
-<Disqus />

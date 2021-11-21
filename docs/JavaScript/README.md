@@ -1,6 +1,7 @@
 ---
 title: JavaScript
 author: 熊滔
+comment: false
 ---
 
 目录：
@@ -19,4 +20,3 @@ author: 熊滔
   - 正则表达式
   - 控制对象的访问
 
-<Disqus />

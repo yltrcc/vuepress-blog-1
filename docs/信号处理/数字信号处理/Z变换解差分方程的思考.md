@@ -3,6 +3,7 @@ title: Z变换解差分方程的思考
 author: 熊滔
 time: 2021-04-03
 category: 数字信号处理
+commentid: signal-process:z-transform-solve-equation
 ---
 
 ## 问题描述

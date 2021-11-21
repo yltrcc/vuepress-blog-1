@@ -1,3 +1,9 @@
+---
+title: JavaScript加号运算符
+author: 熊滔
+commentid: javascript:add-operator
+---
+
 今天看到几道有关加号的题目，觉得很怪异如下
 
 ```javascript
@@ -186,4 +192,3 @@ let obj = {
 
 
 
-<Disqus />

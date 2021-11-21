@@ -2,6 +2,7 @@
 title: HTTP/2之旅
 author: Kamran Ahmed
 time: 2016-08-13
+commentid: essay:translate:http2
 ---
 
 > 本篇文章转载至 https://kamranahmed.info/blog/2016/08/13/http-in-depth/

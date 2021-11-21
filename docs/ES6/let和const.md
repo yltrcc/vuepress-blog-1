@@ -6,6 +6,7 @@ tags:
   - const
 time: 2020-12-08
 author: 熊滔
+commentid: es6:let-and-const
 ---
 
 ## var 声明变量
@@ -216,4 +217,3 @@ funcs.forEach(function(func){
 
 > 最佳实践：变量使用 `const` 定义，当变量需要改变时，在使用 `let` 定义。
 
-<Disqus />

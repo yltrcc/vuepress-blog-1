@@ -3,6 +3,7 @@ title: 初识Vue
 time: 2021-03-29
 author: 熊滔
 category: Vue
+commentid: vue:start-vue
 ---
 
 ## 安装 Vue
@@ -114,4 +115,3 @@ const vm = new Vue({
 
 > 无论我们是通过 `vm.message` 还是 `vm.$data.message` 修改数据，它们之间是互相影响的。即当我们通过 `vm.xxx` 修改数据，那么 `vm.$data.xxx` 的值也会发生改变，反之亦然。
 
-<Disqus />

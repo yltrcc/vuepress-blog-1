@@ -1,3 +1,9 @@
+---
+title: Ajax跨域
+author: 熊滔
+commentid: javascript:ajax-cors
+---
+
 ## 同源策略
 
 什么是同源策略：同 `domain`(或`IP`)，同端口，同协议视为同一个域，一个域内的脚本仅仅具有本域内的权限，可以理解为本域脚本只能读写本域内的资源，而无法访问其它域的资源，这种安全限制称为同源策略。我们看几个例子判断两个链接是否是同源
@@ -250,4 +256,3 @@ Access-Control-Request-Headers: NCZ
 - [跨域的那些事儿](https://zhuanlan.zhihu.com/p/28562290)
 - [浏览器同源策略及跨域的解决方法](https://juejin.im/post/5ba1d4fe6fb9a05ce873d4ad)
 
-<Disqus />

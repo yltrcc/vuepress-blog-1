@@ -1,6 +1,7 @@
 ---
 title: Java文件操作
 author: 熊滔
+commentid: javase:file
 ---
 
 ## File

@@ -3,6 +3,7 @@ title: FFT及其框图实现
 author: 熊滔
 time: 2021-04-03
 category: 数字信号处理
+commentid: signal-process:fft-chart
 ---
 
 $FFT$的全称为快速傅里叶变换，但是$FFT$并不是一种变换，而是实现$DFT$的一种快速算法。当$N$比较大时，使用$FFT$可大大减少进行$DFT$变换的计算量。$N$点的$DFT$所需的计算量为:

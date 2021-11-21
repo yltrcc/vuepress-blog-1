@@ -1,6 +1,7 @@
 ---
 title: Java异常
 author: 熊滔
+commentid: javase:exception
 ---
 
 所谓的异常就是不正常，我们在之前很多地方有碰到异常，比如对象向下转型时有碰到ClassCastException。所有的异常都继承自Exception类。Exception下面有一个重要的的子类叫做RuntimeException。

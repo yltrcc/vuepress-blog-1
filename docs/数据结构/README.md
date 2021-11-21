@@ -1,6 +1,7 @@
 ---
 title: 数据结构
 time: 2019-10-07
+comment: false
 ---
 
 本篇文章是为了记录自己在学习数据结构时的笔记，会对常见的数据结构做基本的介绍以及使用Java语言进行实现。包括
@@ -34,4 +35,3 @@ time: 2019-10-07
 
 - [玩转数据结构](https://coding.imooc.com/class/chapter/207.html)
 
-<Disqus />

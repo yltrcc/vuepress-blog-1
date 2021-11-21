@@ -1,6 +1,7 @@
 ---
 title: div和span
 author: 熊滔
+commentid: html:div-and-span
 ---
 
 `div` 和 `span` 这两个标签不像其他的标签一样有什么功能，其包含的字体也没有特写的样式，例如加粗，斜体等等，这两个标签的作用主要还是配合 `CSS` 用来布局。
@@ -50,4 +51,3 @@ Hello World!
 </div>
 </DisplayBox>
 
-<Disqus />

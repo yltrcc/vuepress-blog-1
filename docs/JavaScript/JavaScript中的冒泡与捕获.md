@@ -1,3 +1,7 @@
+---
+title: JavaScript中的冒泡与捕获
+---
+
 ## JavaScript中的冒泡与捕获
 
 首先来看一个例子来明白什么是冒泡和捕获，来看下面的一个html结构
@@ -238,4 +242,3 @@ inner.addEventListener('click', (e) => {
 
 
 
-<Disqus />

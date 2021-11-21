@@ -5,6 +5,7 @@ category: Node
 tags:
   - 模块
 author: 熊滔
+commentid: node:module
 ---
 
 ## Node.js 提出的背景
@@ -498,7 +499,6 @@ console.log("b.done: ", b.done); // true
 - [npm install 生成的 package-lock.json 是什么文件? 有什么用?](https://www.zhihu.com/question/62331583)
 - [npm scripts 使用指南](https://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
 
-<Disqus />
 
 
-<Disqus />
+

@@ -2,6 +2,7 @@
 title: x的平方根
 author: 熊滔
 category: LeetCode
+commentid: leetcode:x的平方根
 ---
 
 ## 题目描述
@@ -91,4 +92,3 @@ public int mySqrt(int a) {
 
 - [x的平方根](https://leetcode-cn.com/problems/sqrtx/)
 
-<Disqus />

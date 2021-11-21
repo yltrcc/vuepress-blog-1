@@ -3,6 +3,7 @@ title: WSL安装及zsh配置
 author: 熊滔
 time: 2021-10-03
 category: Linux
+commentid: essay:wsl-zsh
 ---
 
 最近想学习 `Linux`，所以就需要一个 `Linux` 系统，那怎么搞一个 `Linux` 系统呢，据我所知有如下四种方法

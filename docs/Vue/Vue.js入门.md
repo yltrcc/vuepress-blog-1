@@ -3,6 +3,7 @@ title: Vue.js入门
 time: 2021-03-29
 author: 熊滔
 category: Vue
+commentid: vue:start-full
 ---
 
 本篇文章的目的是快速的入门 Vue.js，力求能够通过本篇文章了解 Vue.js 的基本用法，但是并不会覆盖 Vue.js 的方方面面，在读完本篇文章之后，便可阅读 Vue.js 的官方教程，进一步的了解 Vue 的进阶内容。
@@ -1841,4 +1842,3 @@ Vue 过渡系统还提供了一系列的钩子函数：
 
 
 
-<Disqus />

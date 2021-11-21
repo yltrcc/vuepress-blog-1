@@ -1,3 +1,9 @@
+---
+title: 数字信号处理
+author: 熊滔
+comment: false
+---
+
 目录：
 
 - 数字信号处理
@@ -16,4 +22,3 @@
 
 
 
-<Disqus />

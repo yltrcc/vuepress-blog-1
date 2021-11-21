@@ -6,6 +6,7 @@ tags:
   - 数据结构
 time: 2019-10-03
 author: 熊滔
+commentid: data-structure:avl-tree
 ---
 
 ## 概念及实现
@@ -531,4 +532,3 @@ public class AVLTree<E extends Comparable<E>> {
 }
 ```
 
-<Disqus />

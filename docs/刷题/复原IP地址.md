@@ -3,6 +3,7 @@ title: 复原IP地址
 category: LeetCode
 author: 熊滔
 time: 2021-09-22
+commentid: leetcode:复原IP地址
 ---
 
 ## 题目描述

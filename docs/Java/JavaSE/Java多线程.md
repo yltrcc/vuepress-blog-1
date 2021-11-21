@@ -1,6 +1,7 @@
 ---
 title: Java多线程
 author: 熊滔
+commentid: javase:multi-threads
 ---
 
 ## 多线程概述

@@ -1,6 +1,7 @@
 ---
 title: Java集合与泛型
 author: 熊滔
+commentid: javase:collection-and-generic
 ---
 
 ## Collection

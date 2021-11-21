@@ -2,6 +2,7 @@
 title: HTML简介
 time: 2021-04-10
 author: 熊滔
+commentid: html:introduce
 ---
 
 HTML (Hyper Text Markup Language)，翻译为超文本标记语言，我们使用它来描述网页。所谓的超文本指的是不仅仅能够表示文字，还能够表示图片，音视频，以及超链接等等内容。我们使用下面形式的文本来表示网页
@@ -103,4 +104,3 @@ Chrome 浏览器的使用率名列前茅，第二名是 Safari，是苹果自家
 
 
 
-<Disqus />

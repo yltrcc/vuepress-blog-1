@@ -1,6 +1,7 @@
 ---
 title: MySQL
 author: 熊滔
+comment: false
 ---
 
 目录：

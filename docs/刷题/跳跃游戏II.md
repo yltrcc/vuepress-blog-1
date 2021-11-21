@@ -2,6 +2,7 @@
 title: 跳跃游戏
 author: 熊滔
 category: LeetCode
+commentid: leetcode:跳跃游戏
 ---
 
 ## 题目介绍
@@ -91,4 +92,3 @@ public int jump(int[] nums) {
 - [跳跃游戏II](https://leetcode-cn.com/problems/jump-game-ii/)
 - [详解「DP + 贪心 + 双指针」解法，以及该如何猜 DP 的状态定义 ~](https://leetcode-cn.com/problems/jump-game-ii/solution/xiang-jie-dp-tan-xin-shuang-zhi-zhen-jie-roh4/)
 
-<Disqus />

@@ -2,6 +2,7 @@
 title: CSS介绍
 author: 熊滔
 category: CSS
+commentid: css:introduce
 ---
 
 `HTML` 为网页搭建好了骨架，但是这远远是不够的，我们要求页面应该美观，这就需要用到 `CSS`。`CSS` 全称为 Cascading Style Sheets，中文翻译过来为层叠样式表，它可以为标签添加样式，例如改变文字颜色，设置对齐方式等等。
@@ -160,4 +161,3 @@ p {
 
 
 
-<Disqus />

@@ -1,6 +1,7 @@
 ---
 title: 远程访问 jupyter
 author: 熊滔
+commentid: essay:remote-jupyter
 ---
 
 最近又开始折腾了 `jupyter` 了，因为实验室的网络环境太差，每次我使用 `conda` 开启一个新的环境，然后下载一些新的包时会非常的慢，慢我还能忍，问题是经常下载失败，浪费我的时间:sob:，接着我想到我有一台腾讯云的服务器，我就想在服务器上下载 `jupyter`，然后远程访问。

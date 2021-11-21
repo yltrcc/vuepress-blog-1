@@ -1,3 +1,9 @@
+---
+title: Webpack
+author: 熊滔
+comment: false
+---
+
 目录：
 
 - [Webpack介绍](/vuepress-blog/Webpack/Webpack介绍)
@@ -18,4 +24,3 @@
 - [Babel：plugin、preset的区别与使用](https://juejin.im/entry/5b15d3acf265da6e38191f80)
 - [webpack4.0 clean-webpack-plugin 插件跳坑指南](https://juejin.im/post/5d107a56e51d45773d46863c)
 
-<Disqus />

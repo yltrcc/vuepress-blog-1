@@ -5,6 +5,7 @@ category: Node
 tags:
   - http
 author: 熊滔
+commentid: node:http
 ---
 
 我们可以使用 http 模块搭建 HTTP 服务器，处理前端页面发起的请求，首先我们搭建一个简单的 HTTP 服务器
@@ -277,4 +278,3 @@ res.end();
 
 - [nodejs 中服务器返回响应信息中的中文乱码](https://my.oschina.net/u/3407699/blog/1624320)
 
-<Disqus />

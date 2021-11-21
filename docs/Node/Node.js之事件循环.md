@@ -7,6 +7,7 @@ tags:
   - setImmediate
   - nextTick
 author: 熊滔
+commentid: node:event-loop
 ---
 
 Node.js 是单线程的，但是它却可以应用在高并发场景，原因就是它的事件循环机制。所以本篇文章来介绍 Node.js 的事件循环机制。
@@ -350,7 +351,6 @@ process.nextTick(recursive);
 - [The Node.js Event Loop, Timers, and process.nextTick()](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
 - [Node 定时器详解](http://www.ruanyifeng.com/blog/2018/02/node-event-loop.html)
 
-<Disqus />
 
 
-<Disqus />
+

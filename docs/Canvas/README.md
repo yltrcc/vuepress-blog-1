@@ -1,6 +1,7 @@
 ---
 title: Canvas
 author: 熊滔
+comment: false
 ---
 
 有关于 Canvas 系列文章，目前定为两部分，基础篇与实战篇：

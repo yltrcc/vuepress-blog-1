@@ -1,6 +1,7 @@
 ---
 title: Java开发环境搭建
 author: 熊滔
+commentid: javase:develop-env
 ---
 
 Java环境搭建分为三步：

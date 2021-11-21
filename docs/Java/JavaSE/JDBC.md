@@ -1,6 +1,7 @@
 ---
 title: JDBC
 author: 熊滔
+commentid: javase:jdbc
 ---
 
 ## 初识JDBC

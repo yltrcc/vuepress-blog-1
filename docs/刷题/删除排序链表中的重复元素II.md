@@ -2,6 +2,7 @@
 title: 删除排序链表中的重复元素II
 author: 熊滔
 category: LeetCode
+commentid: leetcode:删除排序链表中的重复元素II
 ---
 
 ## 题目描述

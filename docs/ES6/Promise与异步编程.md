@@ -5,6 +5,7 @@ tags:
   - Promise
 time: 2021-01-20
 author: 熊滔
+commentid: es6:promise
 ---
 
 ## 异步编程背景
@@ -470,4 +471,3 @@ function asyncTaskRunner(generator) {
 
 只需要在函数参数列表前加入 `async` 关键字，将 `yield` 换为 `await` 即可以同步方式写出优雅的异步代码。
 
-<Disqus />

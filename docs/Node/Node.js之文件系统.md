@@ -5,6 +5,7 @@ category: Node
 tags:
   - fs
 author: 熊滔
+commentid: node:fs
 ---
 
 fs 模块是与文件系统有关的模块，可以使用它来进行文件相关的操作。
@@ -328,4 +329,3 @@ fs.stat("./file/world.txt", (err, stats) => {
 - [Linux File Timestamps Explained: atime, mtime, and ctime](https://www.howtogeek.com/517098/linux-file-timestamps-explained-atime-mtime-and-ctime/)
 - [Node.js v15.9.0 Documentation](https://nodejs.org/api/fs.html)
 
-<Disqus />

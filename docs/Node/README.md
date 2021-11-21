@@ -1,6 +1,7 @@
 ---
 title: Node
 author: 熊滔
+comment: false
 ---
 
 目录：
@@ -23,4 +24,3 @@ author: 熊滔
   - [Node.js之MongoDB](/vuepress-blog/Node/Node.js之MongoDB)
 
 
-<Disqus />

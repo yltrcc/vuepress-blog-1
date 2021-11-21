@@ -3,6 +3,7 @@ title: Z变换
 author: 熊滔
 time: 2021-04-03
 category: 数字信号处理
+commentid: signal-process:z-transform
 ---
 
 由于$DTFT$变换是有收敛条件的，并且其收敛条件比较严格，很多信号不能够满足条件，为了有效的分析信号，需要放宽收敛的条件，引入$Z$变换。

@@ -1,3 +1,9 @@
+---
+author: 熊滔
+title: 算法
+comment: false
+---
+
 目录：
 
 - 排序算法
@@ -9,4 +15,3 @@
   - [快速排序](/vuepress-blog/算法/排序算法/快速排序)
   - [堆排序](/vuepress-blog/算法/排序算法/堆排序)
 
-<Disqus />

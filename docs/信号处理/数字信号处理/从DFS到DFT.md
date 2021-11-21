@@ -3,6 +3,7 @@ title: 从DFS到DFT
 author: 熊滔
 time: 2021-04-03
 category: 数字信号处理
+commentid: signal-process:dfs2dft
 ---
 
 ## 周期序列的级数展开

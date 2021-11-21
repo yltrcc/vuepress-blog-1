@@ -3,6 +3,7 @@ title: DML
 time: 2019-10-20
 category: MySQL
 author: 熊滔
+commentid: mysql:dml
 ---
 
 `DML` 是与修改数据有关的 `sql` 语句。修改数据主要包括的是增删改数据。为了查看修改数据的效果，这里介绍一个查询数据的命令

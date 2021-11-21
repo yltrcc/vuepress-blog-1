@@ -1,6 +1,7 @@
 ---
 title: Canvas高级
 author: 熊滔
+commentid: canvas:advanced
 ---
 
 ## 阴影

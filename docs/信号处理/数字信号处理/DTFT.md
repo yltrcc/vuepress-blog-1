@@ -3,6 +3,7 @@ title: DTFT
 author: 熊滔
 time: 2021-04-03
 category: 数字信号处理
+commentid: signal-process:dtft
 ---
 
 ## 离散时间傅里叶变换(DTFT)

@@ -1,6 +1,7 @@
 ---
 title: Spring常见注解
 author: 熊滔
+commentid: javaee:spring-annotation
 ---
 
 

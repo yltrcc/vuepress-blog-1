@@ -2,6 +2,7 @@
 title: 合并K个升序链表
 categories: LeetCode
 author: 熊滔
+commentid: leetcode:合并K个升序链表
 ---
 
 ## 题目描述
@@ -137,4 +138,3 @@ $$
 
 - [合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
 
-<Disqus />

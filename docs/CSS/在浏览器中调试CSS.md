@@ -2,6 +2,7 @@
 title: 在浏览器中调试CSS
 author: 熊滔
 category: CSS
+commentid: css:debug-in-broswer
 ---
 
 当我们写 `CSS` 样式的时候，大部分情况下我们不会(能)一次性写出想要的效果，而是写出一部分代码，然后在浏览器中预览效果，在浏览器中我们根据看到效果我们会一步步调试 `CSS` 代码，直至达到满意。但是因为有多种选择器作用在元素上，很多时候我们很难知道哪一个选择器的样式生效了，所以也就不知道改哪部分的代码。
@@ -30,4 +31,3 @@ category: CSS
 
 <img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531215204.gif" alt="3" style="zoom:50%;" />
 
-<Disqus />

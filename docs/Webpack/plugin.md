@@ -1,3 +1,9 @@
+---
+title: plugin
+author: 熊滔
+commentid: webpack:plugin
+---
+
 `plugin` 是 `webpack` 的另一大特色，它为我们提供了相当多的功能，在 `webpack` 打包的整个生命周期中会广播出很多事件，而 `plugin` 可以监听这些事件，在合适的时机通过 `webapck` 提供的 `API` 改变输出的结果。下面就介绍一些常用到的 `plugin`。
 
 ## mini-css-extract-plugin
@@ -168,4 +174,3 @@ module.exports = {
 可见它已经自动为我们引入了打包后的 `JavaScript` 文件和 `CSS` 文件。
 
 
-<Disqus />

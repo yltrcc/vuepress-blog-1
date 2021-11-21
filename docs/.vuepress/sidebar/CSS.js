@@ -22,16 +22,13 @@ module.exports = [{
     }, {
         title: '伪元素',
         path: '伪元素'
-    }, {
-        title: '在浏览器中调试CSS',
-        path: '在浏览器中调试CSS'
     }]
 }, {
-    title: '排版',
+    title: '文字排版',
     collapsable: false,
     children: [{
-        title: '字体属性',
-        path: '字体属性'
+        title: '字体',
+        path: '字体'
     }, {
         title: '颜色',
         path: '颜色'
@@ -42,14 +39,17 @@ module.exports = [{
         title: '字体图标',
         path: '字体图标'
     }, {
-        title: '文本样式',
-        path: '文本样式'
+        title: '文字排版',
+        path: '文字排版'
+    }, {
+        title: '段落排版',
+        path: '段落排版'
     }, {
         title: '多列布局',
         path: '多列布局'
     }, {
-        title: '浮动：图文混排',
-        path: '浮动：图文混排'
+        title: '图文混排',
+        path: '图文混排'
     }]
 }, {
     title: '盒子模型',

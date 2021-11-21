@@ -60,7 +60,23 @@ module.exports = config({
         ['run', {
             jsLabs: ['https://unpkg.com/element-ui/lib/index.js'],
             cssLabs: ['https://unpkg.com/element-ui/lib/theme-chalk/index.css'],
-        }]
+        }],
+        [
+            'vuepress-plugin-comment',
+            {
+              choosen: 'gitalk', 
+              options: {
+                clientID: '651c9d66077531d194cf',
+                clientSecret: '705cbe0ab0e14a1e67935e7f839cbdda5fe0da48',
+                repo: 'vuepress-blog',
+                owner: 'LastKnightCoder',
+                admin: ['LastKnightCoder'],
+                // github issue 不能超过 50 个字符
+                id: '<%- frontmatter.commentid %>',
+                distractionFreeMode: true // 是否启动阴影遮罩
+              }
+            }
+          ],
     ],
     base: '/vuepress-blog/',
     head: [

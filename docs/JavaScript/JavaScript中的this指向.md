@@ -1,3 +1,9 @@
+---
+title: JavaScript中的this指向
+author: 熊滔
+commentid: javascript:this
+---
+
 在 `JavaScript` 中，每一个函数都会默认有一个 `this` 的变量，我们在使用 `this` 往往有许多的陷阱与困惑，所以在这篇文章中就讲讲 `JavaScript` 中的 `this`。如果想要知道 `JavaScript` 函数里面的 `this` 是什么，就要知道函数调用的 `4` 种方式：
 
 ## 全局调用
@@ -139,4 +145,3 @@ print(); // world
 
 
 
-<Disqus />

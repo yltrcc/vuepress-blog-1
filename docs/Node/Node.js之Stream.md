@@ -5,6 +5,7 @@ category: Node
 tags:
   - Stream
 author: 熊滔
+commentid: node:stream
 ---
 
 ## 引入 Stream
@@ -644,4 +645,3 @@ node gzip.js Graph.md Graph.md.gz
 - [深入理解 Node.js Stream 内部机制](https://mp.weixin.qq.com/s/D54-txCSPjKdK-QewPG9Kw)
 - [Node.js Stream - 基础篇](https://tech.meituan.com/2016/07/08/stream-basics.html)
 
-<Disqus />

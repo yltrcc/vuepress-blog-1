@@ -6,6 +6,7 @@ tags:
   - Reflect
 time: 2021-01-21
 author: 熊滔
+commentid: es6:proxy-and-reflect
 ---
 
 在 ES6 之前我们很难模仿一个内置的对象的行为，例如模仿数组，当添加一个新的元素时，length 的长度 +1，当改变 length 的大小时，也会对数组中的元素产生影响，我们很难通过现有的语法去做到这件事情，在 ES6 中给我们提供了 Proxy，使得开发者能够创建内建的对象。
@@ -453,4 +454,3 @@ revoke();
 console.log(proxy);
 ```
 
-<Disqus />

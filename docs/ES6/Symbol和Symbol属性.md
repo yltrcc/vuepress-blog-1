@@ -5,6 +5,7 @@ tags:
   - Symbol
 time: 2020-12-27
 author: 熊滔
+commentid: es6:symbol
 ---
 
 # Symbol 和 Symbol 属性
@@ -323,4 +324,3 @@ Person[Symbol.toStringTag] = "Person"
 console.log(Person.toString()); // [object Person]
 ```
 
-<Disqus />

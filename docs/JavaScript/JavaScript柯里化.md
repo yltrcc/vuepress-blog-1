@@ -1,3 +1,9 @@
+---
+title: 柯里化介绍
+author: 熊滔
+commentid: javascript:curry
+---
+
 ## 柯里化介绍
 
 函数柯里化指的是函数处理一部分的参数，然后返回一个函数来处理剩余的参数，如比如有一个加法函数如下
@@ -101,4 +107,3 @@ let postGoogle = post('https://www.google.com');
 - [大佬，JavaScript 柯里化，了解一下](https://juejin.im/post/5af13664f265da0ba266efcf)
 - [JavaScript专题之函数柯里化](https://github.com/mqyqingfeng/Blog/issues/42)
 
-<Disqus />

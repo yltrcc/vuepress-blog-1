@@ -5,6 +5,7 @@ tags:
   - class
 time: 2021-01-16
 author: 熊滔
+commentid: es6:class
 ---
 
 JavaScript 不同于 Java、C++ 等典型的面向对象语言，JavaScript 在过去并没有类的概念，所以一些从 Java 或 C++ 等其他面向语言转过来的开发者会感到困惑，所以在 ES6 中引入了类的概念。
@@ -492,4 +493,3 @@ Shape 类是一个抽象类，它不能通过 new 来实例化，上面当我们
 let rec = new Rectangle("长方形", 10, 5);
 ```
 
-<Disqus />

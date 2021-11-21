@@ -1,6 +1,7 @@
 ---
 title: SpringMVC入门
 author: 熊滔
+commentid: javaee:springmvc-start
 ---
 
 本片文章是我记录学习Spring MVC的学习笔记，作为初学者，对于这个框架的理解可能并不深刻，所以这篇文章主要讲述的是Spring MVC框架的使用，所以对于有些内容为什么要这么做，这么做有什么好处，由于才疏学浅，却不是我能解释的，所以本篇文章以代码偏多，文字解释偏少。

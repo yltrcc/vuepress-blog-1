@@ -2,6 +2,7 @@
 title: 使用Notion作为视频托管
 author: 熊滔
 time: 2021-10-14
+commentid: essay:notion-video
 ---
 
 有的时候希望在博客里面添加视频，博客托管在 `Github Page` 上，但是视频一般比较大，也就没有办法将其上传到 `Github` 上，一般来说我们可以讲视频上传到视频托管平台，比如 `bilibili` 和 `Youtube`。

@@ -5,6 +5,7 @@ category: Node
 tags:
   - Buffer
 author: 熊滔
+commentid: node:buffer
 ---
 
 Buffer 是 Node.js 的内置类型，它是用来表示内存中一块区域的，它保存的是二进制数据，可以将它看做为一个二进制数组。
@@ -353,4 +354,3 @@ console.log(buf1.equals(buf3)); // false
 - [Buffer|Node.js 文档](http://nodejs.cn/api/buffer.html)
 
 
-<Disqus />

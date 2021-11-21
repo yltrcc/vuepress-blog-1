@@ -2,6 +2,7 @@
 title: 搜索旋转排序数组II
 author: 熊滔
 category: LeetCode
+commentid: leetcode:搜索旋转排序数组II
 ---
 
 ## 题目描述

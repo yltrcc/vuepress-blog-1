@@ -6,6 +6,7 @@ tags:
   - http
   - koa
 author: 熊滔
+commentid: node:koa
 ---
 
 Koa 是号称是 Node.js 的下一代 Web 开发框架，它是原 Express 团队设计的新的 Web 开发框架，不像 Express 使用回调函数的开发方式，在 Koa 中使用 asnyc 函数，使用同步的写法写出异步的代码，让开发有更好的开发体验。
@@ -1089,4 +1090,3 @@ app.listen(3000);
 
 
 
-<Disqus />

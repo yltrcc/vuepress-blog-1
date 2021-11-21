@@ -1,3 +1,9 @@
+---
+title: DOM节点
+author: 熊滔
+commentid: javascript:dom-node
+---
+
 DOM 的全称为 Document Object Model，翻译为**对象文本模型**，它是一个针对于 HTML 的 API，它将 HTML 文档描绘为一棵层次化的树，DOM 规范了操作这个文档树的规范，例如添加、删除、移动等等操作。所有的浏览器都实现了(除了早版本的 IE) DOM 规范，这意味着开发人员在所有的浏览器中写的代码都是一样，不同为每一个浏览器写着不同的代码(**这就是标准带来的好处**)。
 
 下面给出了 HTML 文档翻译成 DOM 树的例子
@@ -481,4 +487,3 @@ ul.appendChild(fragment);
 ```
 
 
-<Disqus />

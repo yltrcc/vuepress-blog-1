@@ -1,6 +1,7 @@
 ---
 title: Java常用API
 author: 熊滔
+commentid: javase:use-most-api
 ---
 
 API全称叫做Application Programming Interface，翻译成应用程序编程接口，其实你把它看做是Java的使用说明书进行，它告诉你Java有哪些类，有哪些方法，你直接用就可以，相当于给你一个插座(接口)，你用的时候插上去就行。

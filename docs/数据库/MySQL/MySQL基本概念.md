@@ -3,6 +3,7 @@ title: MySQL基本概念
 time: 2019-10-20
 category: MySQL
 author: 熊滔
+commentid: mysql:basic-concept
 ---
 
 我们使用Java编写程序，一般数据都是存储在内存中的，一旦程序终止或断电，那么数据就会丢失，所以我们需要将数据存储到本地文件中，我们一般存储到数据库中，而 `MySQL` 正是这么一款数据库。

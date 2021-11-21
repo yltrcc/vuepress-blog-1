@@ -1,3 +1,9 @@
+---
+title: loader
+author: 熊滔
+commentid: webpack:loader
+---
+
 `loader` 又是一个新的概念，我们可以简单的理解为处理器，处理什么呢? 比如我们需要将 `ES6` 转换为 `ES5`，这就需要一个 `loader` 进行转换；比如我们需要将 `less` 转换为 `CSS`，这需要一个 `loader` 进行转换，比如需要将 `TypeScript` 转换为 `JavaScript`，这也需要一个 `loader` 进行转换；等等。
 
 下面我们就介绍一些常用的 `loader`。
@@ -328,4 +334,3 @@ use: "ts-loader"
 关于 `tsconfig.json` 的配置不是重点，可以去网上了解相关内容。现在我们就可以自由的写 `TypeScript` 了。
 
 
-<Disqus />

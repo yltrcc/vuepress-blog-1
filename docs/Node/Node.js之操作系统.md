@@ -5,6 +5,7 @@ category: Node
 tags:
   - os
 author: 熊滔
+commentid: node:os
 ---
 
 os 模块包含有关操作系统有关的信息，例如操作系统架构，CPU 的相关信息
@@ -97,4 +98,3 @@ const os = require("os");
 console.log(os.platform()); // win32
 ```
 
-<Disqus />

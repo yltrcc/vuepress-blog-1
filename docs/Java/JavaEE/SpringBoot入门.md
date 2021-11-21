@@ -1,6 +1,7 @@
 ---
 title: SpringBoot入门
 author: 熊滔
+commentid: javaee:springboot-start
 ---
 
 本篇文章需要有 `Spring` 的使用经验，在本篇文章中，对于 `Spring` 的基本概念如 `IOC` `DI` `AOP` 不会进行介绍，以及对于在 `Spring` 中的常用注解，如 `@Component` `@Autowired` `@Bean` 等等注解默认你已经掌握，否则学习本篇文章会比较困难。
