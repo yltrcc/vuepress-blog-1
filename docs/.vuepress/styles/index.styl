@@ -28,11 +28,7 @@ body:not(.theme-dark) .code-group-nav-tab.active:after,
 body.theme-light .code-group-nav-tab.active:after
   background: transparent
 
-body:not(.theme-dark) .theme-default-content p code,
-body:not(.theme-dark) .theme-default-content li code,
-body.theme-light .theme-default-content p code,
-body.theme-light .theme-default-content li code,
-body.theme-dark .theme-default-content :where(p, li) code
+body:is(:not(.theme-dark), .theme-light, .theme-dark) .theme-default-content :is(p, li, table) code
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59) !important
   -webkit-background-clip: text !important
   color: transparent

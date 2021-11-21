@@ -32,12 +32,21 @@ module.exports = config({
         prevLinks: true,
         nextLinks: true,
         feed: false,
+        pwa: {
+            manifest: {
+                icons: [{
+                    src: 'https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/blog.5p1v1tn3qog0.png',
+                    sizes: '48×48',
+                    type: 'image/png'
+                }],
+            }
+        },
         mdEnhance: {
             align: false,
-            flowchart: false,
+            flowchart: true,
             tex: false,
             lineNumbers: false,
-            mermaid: false,
+            mermaid: true,
             tasklist: true
         },
     },
@@ -62,6 +71,10 @@ module.exports = config({
         ['link', {
             rel: "stylesheet",
             href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+        }],
+        ['link', {
+            rel: "shortcut icon",
+            href: "https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/blog.5p1v1tn3qog0.png"
         }]
     ]
 })
