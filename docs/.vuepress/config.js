@@ -53,9 +53,9 @@ module.exports = config({
     plugins: [
         "@vuepress/nprogress",
         "vuepress-plugin-viewer",
-        ['disqus', {
-            shortname: 'lastknightcoder'
-        }],
+        // ['disqus', {
+        //     shortname: 'lastknightcoder'
+        // }],
         "element-ui",
         ['run', {
             jsLabs: ['https://unpkg.com/element-ui/lib/index.js'],
