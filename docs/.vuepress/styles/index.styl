@@ -14,13 +14,13 @@ body, input, textarea
   font-family: Merriweather Snas, '楷体'
 
 body.theme-light
-  --code-bgcolor: #fafafa
+  --code-bgcolor: #f6f8fa
 body:not(.theme-dark) .code-group-nav, 
 body.theme-light .code-group-nav
   background-color: #fff
 body:not(.theme-dark) .code-group-nav-tab.active, 
 body.theme-light .code-group-nav-tab.active
-  background-color: #fafafa
+  background-color: #f6f8fa
 body:not(.theme-dark) .code-group-nav-tab:hover, 
 body.theme-light .code-group-nav-tab:hover
   background-color: transparent
@@ -42,8 +42,10 @@ code
 
 img
   display: block
-  max-width: 100%
-  margin: 0 auto
+  max-width: 90%
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 18%), 0 4px 15px 0 rgba(0, 0, 0, 15%)
+  border-radius: 3px
+  margin: 1em auto
 
 body, input, button
   font-family: var(--font)
@@ -115,7 +117,7 @@ strong
 
 // gitalk
 #vuepress-plugin-comment 
-  width: 80%
+  max-width: 820px
   margin: 0 auto
 
 .markdown-body .highlight pre, .markdown-body pre

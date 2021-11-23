@@ -43,16 +43,16 @@ module.exports = config({
         },
         mdEnhance: {
             align: false,
-            flowchart: true,
+            flowchart: false,
             tex: false,
-            lineNumbers: false,
+            lineNumbers: true,
             mermaid: true,
             tasklist: true
         },
     },
     plugins: [
         "@vuepress/nprogress",
-        "vuepress-plugin-viewer",
+        // "vuepress-plugin-viewer",
         // ['disqus', {
         //     shortname: 'lastknightcoder'
         // }],
