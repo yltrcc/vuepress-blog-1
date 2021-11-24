@@ -16,6 +16,13 @@ module.exports = config({
             md.use(require('markdown-it-katex'))
         }
     },
+    lang: {
+        locales: {
+            '/': {
+                lang: 'zh-CN'
+            }
+        }
+    },
     chainWebpack: config => {
         config.resolve.alias.set('core-js/library/fn', 'core-js/features')
     },
@@ -35,11 +42,21 @@ module.exports = config({
         pwa: {
             manifest: {
                 icons: [{
-                    src: 'https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/blog.5p1v1tn3qog0.png',
-                    sizes: '48×48',
+                    src: '/icons/icon32.png',
+                    sizes: '32x32',
+                    type: 'image/png'
+                }, {
+                    src: '/icons/icon64.png',
+                    sizes: '64x64',
+                    type: 'image/png'
+                }, {
+                    src: '/icons/icon128.png',
+                    sizes: '128x128',
                     type: 'image/png'
                 }],
-            }
+            },
+            cacheHTML: false,
+            maxSize: 20480
         },
         mdEnhance: {
             align: false,
