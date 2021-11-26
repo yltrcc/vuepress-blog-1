@@ -42,15 +42,15 @@ module.exports = config({
         pwa: {
             manifest: {
                 icons: [{
-                    src: '/icons/icon32.png',
+                    src: '/vuepress-blog/icons/icon32.png',
                     sizes: '32x32',
                     type: 'image/png'
                 }, {
-                    src: '/icons/icon64.png',
+                    src: '/vuepress-blog/icons/icon64.png',
                     sizes: '64x64',
                     type: 'image/png'
                 }, {
-                    src: '/icons/icon128.png',
+                    src: '/vuepress-blog/icons/icon128.png',
                     sizes: '128x128',
                     type: 'image/png'
                 }],
