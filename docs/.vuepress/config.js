@@ -53,6 +53,10 @@ module.exports = config({
                     src: '/vuepress-blog/icons/icon128.png',
                     sizes: '128x128',
                     type: 'image/png'
+                }, {
+                    src: '/vuepress-blog/icons/icon256.png',
+                    sizes: '256x256',
+                    type: 'image/png'
                 }],
             },
             cacheHTML: false,
