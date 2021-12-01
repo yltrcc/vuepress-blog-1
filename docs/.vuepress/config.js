@@ -59,7 +59,7 @@ module.exports = config({
                     type: 'image/png'
                 }],
             },
-            cacheHTML: false,
+            cacheHTML: true,
             maxSize: 20480
         },
         mdEnhance: {
