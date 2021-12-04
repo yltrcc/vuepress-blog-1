@@ -82,23 +82,26 @@ module.exports = [{
             icon: "basis"
         }]
     }]
-}, {
-    text: '数据库',
-    icon: 'shujuku',
-    items: [{
-        text: 'MySQL',
-        link: '/数据库/MySQL/',
-        icon: 'mysql'
-    }]
-}, {
-    text: '信号处理',
-    icon: 'signal',
-    items: [{
-        text: '数字信号处理',
-        link: '/信号处理/数字信号处理/',
-        icon: 'matching'
-    }]
-}, {
+}, 
+// {
+//     text: '数据库',
+//     icon: 'shujuku',
+//     items: [{
+//         text: 'MySQL',
+//         link: '/数据库/MySQL/',
+//         icon: 'mysql'
+//     }]
+// }, 
+// {
+//     text: '信号处理',
+//     icon: 'signal',
+//     items: [{
+//         text: '数字信号处理',
+//         link: '/信号处理/数字信号处理/',
+//         icon: 'matching'
+//     }]
+// }, 
+{
     text: '收藏',
     icon: 'shoucang',
     items: [{

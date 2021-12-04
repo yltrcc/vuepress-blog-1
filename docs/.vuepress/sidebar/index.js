@@ -3,11 +3,11 @@ const ES6 = require('./ES6.js')
 const DataStructure = require('./DataStructure.js')
 const Vue = require('./Vue.js')
 const Algorithm = require('./algorithm.js')
-const DSP = require('./DSP.js')
+// const DSP = require('./DSP.js')
 const Practice = require('./practice.js')
 const Collection = require('./collection.js')
 const TypeScript = require('./TypeScript.js')
-const MySQL = require('./MySQL.js')
+// const MySQL = require('./MySQL.js')
 const Webpack = require('./Webpack.js')
 const HTML = require('./HTML.js')
 const JavaScript = require('./JavaScript.js')
@@ -24,11 +24,11 @@ module.exports = {
     "/数据结构/": DataStructure,
     "/Vue/": Vue,
     "/算法/": Algorithm,
-    "/信号处理/": DSP,
+    // "/信号处理/": DSP,
     "/刷题/": Practice,
     "/收藏/": Collection,
     "/TypeScript/": TypeScript,
-    "/数据库/MySQL/": MySQL,
+    // "/数据库/MySQL/": MySQL,
     "/Webpack/": Webpack,
     "/HTML/": HTML,
     "/JavaScript/": JavaScript,
