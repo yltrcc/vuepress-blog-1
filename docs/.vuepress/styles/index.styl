@@ -69,20 +69,57 @@ ul, ol
   line-height: 2
   padding-left: 2.2em
 
-blockquote 
-  width: 100%
-  background-color: var(--boxes)
-  border-left: 4px solid var(--primary-color)
-  border-radius: 0.3rem
-  padding: 1rem
-  color: black
-  padding-bottom: 5px
+// blockquote
+blockquote::before
+  content: "❝"
+  color: rgba(64, 184, 250, .5)
+  font-size: 34px
+  line-height: 1
+  font-weight: 700
+blockquote
+  padding: 20px
+  text-size-adjust: 100%
+  line-height: 1.55em
+  font-weight: 400
+  border-radius: 6px
+  color: #2d2e36
+  font-style: normal
+  text-align: left
+  box-sizing: inherit
+  border-left: none
+  border: 1px solid rgba(64, 184, 250, .6)
+  background: rgba(64, 184, 250, .2) 
+blockquote p
+  color: #2d2e36
+blockquote::after
+  content: "❞"
+  color: rgba(64, 184, 250, .5)
+  float: right
 
-blockquote > p 
-  margin-bottom: 20px
+.theme-dark blockquote 
+  background: rgba(73, 92, 105, .5)
+  border: 1px solid rgba(73, 92, 105, .6)
+  color: #e2e1e4
+.theme-dark blockquote::before 
+  color: rgba(73, 92, 105, .5)
+.theme-dark blockquote::after 
+  color: rgba(73, 92, 105, .5)
+.theme-dark blockquote p 
+  color: #e2e1e4
+// blockquote 
+//   width: 100%
+//   background-color: var(--boxes)
+//   border-left: 4px solid var(--primary-color)
+//   border-radius: 0.3rem
+//   padding: 1rem
+//   color: black
+//   padding-bottom: 5px
 
-blockquote > p:nth-last-child(1)
-  margin-bottom: 10px
+// blockquote > p 
+//   margin-bottom: 20px
+
+// blockquote > p:nth-last-child(1)
+//   margin-bottom: 10px
 
 select 
   background-color: var(--bg-color) !important
