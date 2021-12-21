@@ -100,15 +100,15 @@ export default class VNode {
 
 - 如果 `newVNode` 是元素节点，那么
   - 如果二者都有 `children` 属性，那么比较它们的 `children` 进行更新，这个是重头戏，后面细说
-    <img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-1.3pj119ey8sm0.png" style="zoom:50%;" />
+    <ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-1.3pj119ey8sm0.png" style="zoom:50%;" />
 
   - 否则如果 `newVNode` 有 `children`，而 `oldVNode` 没有，说明是新增内容，这个时候如果 `oldVNode` 是文本节点，那么先清空 `oldVNode` 中的内容，接着将 `newVNode` 的 `children` 添加到 `oldVNode` 中，并更新 DOM
 
-    <img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-2.10sjxsgd8fds.png" style="zoom:50%;" />
+    <ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-2.10sjxsgd8fds.png" style="zoom:50%;" />
 
   - 否则如果 `newVNode` 没有 `children` 属性，但是 `oldVNode` 有 `children`，这表示删除掉了内容，这个时候就直接删除 `oldVNode` 中 `children` 中的所有 `VNode`，并在页面中删除对应的 DOM 元素
 
-    <img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-3.3ug5yhbm7iu0.png" style="zoom:50%;" />
+    <ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-3.3ug5yhbm7iu0.png" style="zoom:50%;" />
 
   - 否则如果 `oldVNode` 有文本内容，那么清空文本内容
 
@@ -118,7 +118,7 @@ export default class VNode {
 
 下图是上面过程的流程框图：
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-4.4bbos60rf0w0.png" style="zoom: 50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-4.4bbos60rf0w0.png" style="zoom: 50%;" />
 
 写一下代码(源自于源码，为了突出重点进行了适当的省略)：
 
@@ -176,11 +176,11 @@ const updateChildren(oldCh, newCh) {
 
 在 `oldCh` 中查找有两种方法，一种是建立 `key` 和 `index` 的对应关系，通过 `key` 进行查找
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-5.5omw94mdk8o0.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-5.5omw94mdk8o0.png" style="zoom:50%;" />
 
 然后通过 `key` 在 `oldCh` 中查找相应元素
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-6.2jw0gix6k7s0.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-6.2jw0gix6k7s0.png" style="zoom:50%;" />
 
 上面的算法只有两次循环，一次是遍历 `oldVNode` 构建 `keyToIndex` 这张表，另一次是遍历 `newVNode`，根据表查找相应元素，由于两次循环是独立的，而不是嵌套的，总时间为二者之和而不是二者之积，算法复杂度为 $O(m + n)$​​。
 
@@ -223,7 +223,7 @@ function findIndexInOld(node, oldCh, start, end) {
 
 2. 除了 `v-for` 循环产生的列表，因为列表发生改变导致 DOM 结构产生较大的变化，其他情况都不会导致 DOM 结构产生较大变化，这就使得 `newCh` 和 `oldCh` 中的结构几乎一致，大概率只是文本的变化，我们查找起来根本不需要深层次的遍历，可能在开头就已经找到了，大概率算法复杂度只有 $O(max(m, n))$​。
 
-   <img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-7.29dppekxkcw0.png" style="zoom:50%;" />
+   <ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-7.29dppekxkcw0.png" style="zoom:50%;" />
 
 ## key 不是一一绑定
 
@@ -258,7 +258,7 @@ export default {
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-8.17hox35067mo.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-8.17hox35067mo.png" style="zoom:50%;" />
 
 `key` 相同，但是内容不同，无法进行复用，这个时候需要操作 DOM 更改内容，但是如果使用唯一标识作为 `key` 的话
 
@@ -286,7 +286,7 @@ export default {
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-9.1qgxmd2fgqgw.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-9.1qgxmd2fgqgw.png" style="zoom:50%;" />
 
 ### key 重复
 
@@ -328,7 +328,7 @@ export default {
 
 针对我们对数组常见的操作，例如移动数组元素，删除元素，添加元素，***Vue*** 有做一个优化，会先进行四组比较
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-10.fkh18lduzsg.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-10.fkh18lduzsg.png" style="zoom:50%;" />
 
 ## 源码
 
@@ -479,4 +479,4 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
 
 更新虚拟的DOM的过程其实就是一个深度优先遍历
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-11.drawio.28w6qxvc0hj4.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2@master/虚拟DOM-Page-11.drawio.28w6qxvc0hj4.png" style="zoom:50%;" />

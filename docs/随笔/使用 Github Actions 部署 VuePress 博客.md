@@ -109,17 +109,17 @@ jobs:
 
 我们需要在仓库的 `Setting` 中选择 `Secrets`
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531185034.png" alt="image-20210531185033956" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531185034.png" alt="image-20210531185033956" style="zoom:50%;" />
 
 点击右上方的 `New repository secret`
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531185129.png" alt="image-20210531185129280" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531185129.png" alt="image-20210531185129280" style="zoom:50%;" />
 
 `Name` 必须写为 `ACCESS_TOKEN`，`Value` 就是你的 `token`，填写完毕点击 `Add secret`，如果填写没有问题的话，点击之后就会提示添加成功。
 
 每次当你将 `Vuepress` 项目提交到 `Github` 上的时候，`Github` 就会自动帮你部署项目。
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531185615.png" alt="image-20210531185615412" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531185615.png" alt="image-20210531185615412" style="zoom:50%;" />
 
 在 `Actions` 的这个选项中可以看到项目的部署情况，上面可以看到我尝试了三次，第三次成功了，前两次是踩坑，下面就介绍了我踩的两次坑。
 
@@ -133,13 +133,13 @@ npm run docs:build
 
 我觉得麻烦，改为了 `npm run build`，所以第一次运行的时候，就提示我没有这个脚本
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531190036.png" alt="image-20210531190036475" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531190036.png" alt="image-20210531190036475" style="zoom:50%;" />
 
 我改过来了，所以如果你构建的脚本命令和我的不一致的话，还是要改的。
 
 另一个坑，上面配置好了以后，我将我的 `VuePress` 博客提交到 `Github`，但是运行一段时间之后爆出了错误
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531190224.png" alt="image-20210531190224283" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531190224.png" alt="image-20210531190224283" style="zoom:50%;" />
 
 从错误的类型看好像是超内存了，然后经过我的搜索，在 `Github` 的一个 `issue` 中找到了[解决办法](https://github.com/ScaCap/action-surefire-report/issues/17#issuecomment-677015255)，添加下面的环境变量
 

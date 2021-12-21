@@ -16,7 +16,7 @@ commentid: essay:notion-video
 后来我发现可以将视频放在 `Notion`，对于 `Pro Plan` 可以上传无限容量的文件，当然就可以上传视频，因为它是一个网页应用，我们可以拿到视频的播放地址，我们可以将视频地址拿过来嵌入到自己的博客中，这样就可以播放视频了，并且也没有清晰度的限制，唯一的缺点可能就是播放速度可能不是很快，但是因为上传到 `Notion` 是不用审核的，咱们可以分享一些电影。
 
 <DisplayBox>
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110142140352021-10-14-21-40-36.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110142140352021-10-14-21-40-36.png" style="zoom:50%"/>
 </DisplayBox>
 
 但是很快我发现天真了，链接很快就失效，Notion 做了相关处理，视频链接是有时间限制的，但是后面我想到 `Notion` 提供了 `API` 来访问页面的内容，那我们可以在每次打开博客的时候对相关页面进行访问，拿到最新的链接进行播放即可，说干就干。
@@ -24,13 +24,13 @@ commentid: essay:notion-video
 按照 `Notion` [官网指南](https://developers.notion.com/docs/getting-started)，首先需要前往 [https://www.notion.so/my-integrations](https://www.notion.so/my-integrations) 创建一个 `integrations`，具体按照它的来操作，比如我创建了一个名字为 `test` 的 `integrations`，创建好之后会给你一个字符串密钥，我们就可以通过这个密钥来访问相关页面。
 
 <DisplayBox>
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110142148482021-10-14-21-48-49.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110142148482021-10-14-21-48-49.png" style="zoom:50%"/>
 </DisplayBox>
 
 我们将需要被访问的页面 `share` 到该 `integrations` 中，
 
 <DisplayBox>
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110150133482021-10-15-01-33-48.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110150133482021-10-15-01-33-48.png" style="zoom:50%"/>
 </DisplayBox>
 
 然后就可以使用 `Notion` 提供 `JS` 接口来访问相关页面，首先新建一个 `npm` 项目，并下载依赖
@@ -59,7 +59,7 @@ const notion = new Client({
 在上面的代码中，我们使用 `notion.blocks.children.list` 来获得指定块 ID 包含的所有内容，**注意到页面也是一个块**，而页面的块 ID 可以通过网页地址拿到 
 
 <DisplayBox>
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110142158162021-10-14-21-58-17.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110142158162021-10-14-21-58-17.png" style="zoom:50%"/>
 </DisplayBox>
 
 上述代码的运行结果为
@@ -175,7 +175,7 @@ video {
 但是万万没有想到，不能跨域！！！
 
 <DisplayBox>
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110142229092021-10-14-22-29-09.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110142229092021-10-14-22-29-09.png" style="zoom:50%"/>
 </DisplayBox>
 
 为了解决跨域的问题，我们必须使用一个服务器中转请求，并在该服务器中处理跨域问题，但是我没有服务器，这就意味着我需要租一个服务器，但是咱没钱啊，此时我的脑海里想起可不可以使用我的电脑作为服务器呢，但是我的电脑因为到处移动，它的 `IP` 是不断变化的，无法提供稳定的服务，总不可能每次变 `IP` 我都要重新改一下请求地址并部署一次项目吧。
@@ -235,7 +235,7 @@ app.listen(9000, () => {
 注意到在代码中做了跨域处理，所以就不存在跨域的问题。然后我们点击部署，接着会给出一个访问地址，我们就可以通过访问地址来请求服务。
 
 <DisplayBox>
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110150116212021-10-15-01-16-22.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110150116212021-10-15-01-16-22.png" style="zoom:50%"/>
 </DisplayBox>
 
 下面我们就需要更改 `NotionVideo.vue` 文件，使用 `fetch` 方法访问腾讯云给出的访问路径

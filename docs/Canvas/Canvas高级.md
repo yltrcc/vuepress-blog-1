@@ -168,13 +168,13 @@ canvas.addEventListener('click', event => {
 
 当我们绘制的路径交叉在一起，形成了多个区域，这个时候应该填充哪些区域呢
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/Canvas-非零环绕.21db9l9zs8rk.svg" alt="Canvas-非零环绕.svg"  />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/Canvas-非零环绕.21db9l9zs8rk.svg" alt="Canvas-非零环绕.svg"  />
 
 在一个路径中绘制了两个圆，其中一个圆是顺时针绘制的，一个圆是逆时针绘制的，形成了三个区域，那么当我们调用 `fill()` 方法时，哪些区域应该填充呢？
 
 判断哪些区域应该填充需要使用非零环绕原则，从区域中引一条射线，该射线会与路径相交，如果该射线与路径的方向相同(夹角小于 90 度)，则进行加 1，如果相反则进行减 1，最后如果结果不为 0，则对该区域进行填充，否则不填充
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/Canvas-Page-6.1mebk0fsp934.svg" alt="Canvas-Page-6.svg"  />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3@master/Canvas-Page-6.1mebk0fsp934.svg" alt="Canvas-Page-6.svg"  />
 
 从上图看，区域 `1` 引出一条射线，与一条路径相交，该路径的方向与射线的方向相同，因此加 $1$，最终结果不为 $0$，因此区域 `1` 应该被填充。从区域 `2` 引出一条射线，与路径有两个交点，可以看出射线与相交时的路径一个方向相同一个方向相反，因此最终的结果为 $0$，所以区域 `2` 不会被填充；从区域 `3` 引出一条射线，与路径有三个交点，可以看出射线与这三条路径的方向都相反，因此结果为 $-3$，不为零，因此区域 3 会被填充
 

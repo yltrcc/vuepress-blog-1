@@ -18,7 +18,7 @@ commentid: leetcode:不同的二叉搜索树II
 ```
 
 <DisplayBox>
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/不同的二叉搜索树.drawio2021-09-26-11-19-56.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/不同的二叉搜索树.drawio2021-09-26-11-19-56.png" style="zoom:50%"/>
 </DisplayBox>
 
 `TreeNode` 的定义如下

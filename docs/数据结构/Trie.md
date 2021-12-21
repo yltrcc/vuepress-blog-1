@@ -11,7 +11,7 @@ commentid: data-structure:trie-tree
 
 `Trie` 树又称为字典树、前缀树。如果我们使用一般树结构去查询一个数据集里的单词，它的复杂度是 `O(log n)`，但是如果我们使用 `Trie` 去查询单词的话，查询的复杂度只与单词的长度有关，与数据的规模无关。比如对于一个 $2^{20}$ 规模的数据集，我们去查一个单词 `"word"`，一般树的复杂度为 `O(20)`，而 `Trie` 树的复杂度为 `O(4)`，其中 4 是单词的长度，所以 `Trie` 树是一种很高效的查询字符串的树结构。
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703100017.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703100017.png" style="zoom:50%;" />
 
 
 ```java
@@ -38,7 +38,7 @@ class Node {
 }
 ```
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703094429.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703094429.png" style="zoom:50%;" />
 
 另外通过叶子节点是无法区别单词的结尾的，因为有的单词可能为某个单词的前缀，如 `"pan"` 为 `"panda"` 的前缀，所以我们要增加一个变量 `isWord` 来表示是否是单词的结尾
 
@@ -78,7 +78,7 @@ public class Trie {
 
 ### 添加单词
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703094613.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703094613.png" style="zoom:50%;" />
 
 ```java
 public void add(String word) {

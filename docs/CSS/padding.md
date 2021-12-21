@@ -13,7 +13,7 @@ category: CSS
 | `padding-left`   | 左内边距 |
 | `padding-right`  | 右内边距 |
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210526184931.png" alt="内边距" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210526184931.png" alt="内边距" style="zoom:50%;" />
 
 <CodeGroup>
 <CodeGroupItem title="html" active>

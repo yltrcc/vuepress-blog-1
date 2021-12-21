@@ -43,7 +43,7 @@ app.listen(3000);
 node index.js
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210224210145.png" style="zoom:50%" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210224210145.png" style="zoom:50%" />
 
 ## 路由
 
@@ -130,7 +130,7 @@ http://localhost:3000/static/css/index.css
 
 为什么叫做中间件，我猜是因为它位于请求与路由响应中间，所以称它为中间件
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210225185518.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210225185518.png" style="zoom:50%"/>
 
 
 我们说中间件是一个函数，它接收三个参数
@@ -192,7 +192,7 @@ app.post("/",(req, res) => {
 })
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210225193433.png" style="zoom: 50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210225193433.png" style="zoom: 50%"/>
 
 ## 参考文献
 

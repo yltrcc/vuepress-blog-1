@@ -13,19 +13,19 @@ commentid: data-structure:avl-tree
 
 我们在研究二分搜索树时发现，如果我们将数据顺序添加进树中时，它有会退化成一棵链表，即所有的元素都添加到一个孩子上，这样树结构的优势就体现不出来，为了不使左右孩子的高度相差太大，我们需要对树进行调整，使树达到平衡，成为一棵平衡二叉树，`AVL` 就是一种经典的平衡二叉树
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703110331.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703110331.png" style="zoom:50%;" />
 
 在 `AVL` 中，我们定义的平衡二叉树为，对于任意一个节点，左子树和右子树的高度相差不能超过 `1`。
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703110510.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703110510.png" style="zoom:50%;" />
 
 我们为每一个节点标注好高度值，计算方法为取左右子树高度较高的高度，然后 `+1`
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703110604.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703110604.png" style="zoom:50%;" />
 
 然后我们还有记录节点左右子树的高度差，我们称之为平衡因子(规定用左子树的高度-右子树的高度)
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703110648.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703110648.png" style="zoom:50%;" />
 
 由于我们只是在添加元素和删除元素时对树进行调整，其余的代码同二分搜索树是相同的，所以就不贴出所有的代码，只给出不同的代码，首先我们需要在 `Node` 类中添加一个 `height` 变量来记录高度
 
@@ -139,7 +139,7 @@ private boolean isBalanced(Node node) {
 
 下面对不平衡的四种情形进行讨论，并给出调整方法
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703101655.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200703101655.png" style="zoom:50%;" />
 
 ```java
 // 对节点y进行向右旋转操作，返回旋转后新的根节点x

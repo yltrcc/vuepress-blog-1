@@ -131,7 +131,7 @@ exports = {
 
 要明白上面的写法为什么是错误的，我先再次强调，**模块导出的是 `module.exports` 这个变量**，而 `exports` 只是一个引用，指向 `module.exports`。所以当我们通过 `exports.xxx` 的方式添加属性时，也就是相当于为 `module.exports` 这个对象添加属性，所以被添加的属性可以被导出；但是当我们为 `exports` 赋予一个新的值的时候，`exports` 不在是 `module.exports` 的引用，并且 `module.exports` 并不会发生任何的改变，导出的内容也不会如预期那般。
 
-<img src="https://user-images.githubusercontent.com/29890094/106893281-493cb480-6728-11eb-9746-bf2438cce57c.gif" style="zoom: 25%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/106893281-493cb480-6728-11eb-9746-bf2438cce57c.gif" style="zoom: 25%;" />
 
 如果想直接导出一个对象，请直接使用 `module.exports`，或者通过 `exports.xxx` 的方式一个个的添加属性。
 
@@ -214,7 +214,7 @@ b.js
 
 我们写一个项目，就肯定需要准备一个 `package.json` 文件，你可以手动创建该文件，或者通过 `npm init` 命令创建一个模板，一般情况下我们都会使用 `npm init` 来创建一个 `package.json` 文件
 
-<img src="https://user-images.githubusercontent.com/29890094/106990677-ad568b80-67af-11eb-94e6-df5030160cf1.png" style="zoom:50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/106990677-ad568b80-67af-11eb-94e6-df5030160cf1.png" style="zoom:50%;" />
 
 在我们输入 `npm init` 后，它会引导我们创建一个 `package.json` 文件，填写一些常见的信息，例如包名、版本、作者等等，当这些都执行完毕后，在目录下回出现一个 `package.json` 文件，其内容如下
 
@@ -253,11 +253,11 @@ b.js
 npm install -g nrm
 ```
 
-<img src="https://user-images.githubusercontent.com/29890094/107120136-cc940c80-68c6-11eb-8b0a-94c0a634df9d.png" style="zoom:50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/107120136-cc940c80-68c6-11eb-8b0a-94c0a634df9d.png" style="zoom:50%;" />
 
 它会将这个包下载到 `C:\Users\username\AppData\Roaming\npm\node_modules` 这个文件夹下面，并且会在 `C:\Users\username\AppData\Roaming\npm\` 生成对应的 .cmd 文件，例如当我们全局安装 nrm 之后就会在 npm 文件夹下生成 nrm.cmd 文件
 
-<img src="https://user-images.githubusercontent.com/29890094/107135256-0b13e080-6934-11eb-9f41-ae7d18ce6097.png" style="zoom:50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/107135256-0b13e080-6934-11eb-9f41-ae7d18ce6097.png" style="zoom:50%;" />
 
 因为 `C:\Users\username\AppData\Roaming\npm\` 这个文件夹在安装 `npm` 的时候就会被自动的添加到环境变量中，当我们在命令行输入 `nrm` 的时候，它就会在这个路径搜索 `nrm` 命令，然后执行，这就是全局安装的包能够在命令行直接执行的原因。
 
@@ -269,7 +269,7 @@ nrm ls
 
 它会显示出有哪些可用的镜像源
 
-<img src="https://user-images.githubusercontent.com/29890094/107135518-63e47880-6936-11eb-9957-5923a11da34f.png" style="zoom:50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/107135518-63e47880-6936-11eb-9957-5923a11da34f.png" style="zoom:50%;" />
 
 我们一般选择 taobao 或者 cnpm 镜像源，通过 `nrm use 镜像源 `的方式选择镜像源
 
@@ -277,15 +277,15 @@ nrm ls
 nrm use taobao
 ```
 
-<img src="https://user-images.githubusercontent.com/29890094/107135564-c0479800-6936-11eb-9d37-1423a1cb00de.png" style="zoom:50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/107135564-c0479800-6936-11eb-9d37-1423a1cb00de.png" style="zoom:50%;" />
 
 > 这里讲述我遇到的一个坑，我之前是下载好 `nrm` 的，为了演示我把之前下载好的 `nrm` 卸载掉，然后重新装了一遍，装了一遍之后发现 `nrm` 不好使了，开始报错
 >
-> <img src="https://user-images.githubusercontent.com/29890094/107135659-83c86c00-6937-11eb-8939-a678f976a99d.png" style="zoom:50%;" />
+> <ImageView src="https://user-images.githubusercontent.com/29890094/107135659-83c86c00-6937-11eb-8939-a678f976a99d.png" style="zoom:50%;" />
 >
 > 咱也不知道为啥，错误提示也看不懂，就去上网搜，说要改变 cli.js(`C:\Users\username\AppData\Roaming\npm\node_modules\nrm\cli.js`) 的第 17 行
 >
-> <img src="https://user-images.githubusercontent.com/29890094/107135698-cc802500-6937-11eb-8bf4-1d12be1a1365.png" style="zoom:50%;" />
+> <ImageView src="https://user-images.githubusercontent.com/29890094/107135698-cc802500-6937-11eb-8bf4-1d12be1a1365.png" style="zoom:50%;" />
 >
 > 上面的一行是原来第 17 行的内容，后面一行是修改后的内容，贴在下面
 >
@@ -303,7 +303,7 @@ nrm use taobao
 
 我们随便下载两个包
 
-<img src="https://user-images.githubusercontent.com/29890094/107135951-fcc8c300-6939-11eb-8bdf-a6d7c6311d43.png" style="zoom:50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/107135951-fcc8c300-6939-11eb-8bdf-a6d7c6311d43.png" style="zoom:50%;" />
 
 我们再查看 `package.json` 文件
 

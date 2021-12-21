@@ -69,7 +69,7 @@ let result = regex.exec(string);
 console.log(result);
 ```
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/20200527135642.png" width="80%"/>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/20200527135642.png" width="80%"/>
 
 输出为
 

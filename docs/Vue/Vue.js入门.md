@@ -66,7 +66,7 @@ document.body.append(ulEle);
 
 上面的程序可能看不懂，毕竟还没有开始学，所以不必担心。从代码量上看，二者似乎相差不大，可能还有点多，但是当我们更新数组时，我们不必操作 DOM 树来更新页面了，当数据发生变化时，Vue 自动地帮我们更新页面，这种模式我们称为 MVVM，其中的 V 表示 View，表示的视图，而 M 表示 Model，表示的是数据，而 `Vue` 充当的角色是 VM，它将数据与视图进行了绑定，当数据发生变化时，视图也会相应的**自动**更新，如下图
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210325225532.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210325225532.png" style="zoom:50%;" />
 
 所以 Vue 给我们带来开发思维上的改变就是，**我们只需要操作数据即可，更新页面的工作 Vue 会自动的帮我们完成**
 
@@ -115,7 +115,7 @@ document.body.append(ulEle);
 
 页面上显示的内容如下：
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326190835.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326190835.png" style="zoom:50%;" />
 
 ### 发生了什么
 
@@ -159,23 +159,23 @@ const vm = new Vue({
 
 模板经过 `Vue` 解析、渲染以后，然后根据该模板生成一个 DOM 元素挂载在页面中，而这个 DOM 元素我们可以通过 `vm.$el` 进行访问得到
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204150.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204150.png" style="zoom:50%;" />
 
 #### $data
 
 通过 `vm.$data` 可以得到 `data` 属性返回的对象
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204437.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204437.png" style="zoom:50%;" />
 
 我们可以通过 `vm.$data` 来修改数据
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204658.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204658.png" style="zoom:50%;" />
 
 上面我们修改数据 `message` 为 `Hello Vue`，页面便发生了变化，进一步证实了数据与视图的绑定。
 
 为了方便通过 `vm` 操作数据，所有的数据都被挂载到了 `vm` 上，即我们可以直接通过 `vm` 访问以及修改数据，而不必通过 `vm.$data`
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204947.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204947.png" style="zoom:50%;" />
 
 上面我们通过 `vm.message` 直接修改了数据，页面也立即发生了变化。
 
@@ -222,7 +222,7 @@ const vm = new Vue({
 
 当我们将鼠标放置在 `p` 标签上时，显示的 `title` 是 `message`，而不是数据 `Hello World!`，说明 `title` 属性并没有与 `message` 进行绑定，因为图比较难截，所以自己试验一下。不过从渲染后的 DOM 元素可以证明这一点
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326205826.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326205826.png" style="zoom:50%;" />
 
 我们希望 `p` 标签的 `title` 属性与 `data` 中定义的 `massage` 进行绑定，我们只需要在属性 `title` 签名加上 `v-bind:` 即可
 
@@ -234,11 +234,11 @@ const vm = new Vue({
 
 这时将鼠标放在 `p` 标签，这时显示的便是 `Hello World!`，从渲染后的 DOM 元素可以证明这一点
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326210212.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326210212.png" style="zoom:50%;" />
 
 并且这时我们对数据进行更改，相应的数据也会发生变化
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326210323.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326210323.png" style="zoom:50%;" />
 
 
 
@@ -293,7 +293,7 @@ const vm = new Vue({
 
 `clear` 的方法会将 `message` 数据设置为空字符串
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210327202201.gif" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210327202201.gif" style="zoom:50%;" />
 
 当我们点击 `p` 标签时，`message` 数据变为空字符串，相应的页面也会发生改变。
 
@@ -329,7 +329,7 @@ const vm = new Vue({
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329131030.gif" alt="3" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329131030.gif" alt="3" style="zoom:50%;" />
 
 > 在内联的写法中，我们可以通过 `$event` 访问到 `event` 事件对象。
 
@@ -421,7 +421,7 @@ const vm = new Vue({
 
 上面我们为 `p` 标签使用了 `v-if` 指令，指定了它的值为 `show`，当数据 `show` 为 `true` 才会显示标签 `p`，为 `false` 时则不会显示。在页面中还有一个按钮，当点击按钮时，会触发 `toggle` 方法，而该方法是将 `show` 进行取反，也就是说当我们点击按钮时，如果 `p` 标签显示，那么点击按钮时它会从页面消失，反之亦然
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210327204302.gif" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210327204302.gif" style="zoom:50%;" />
 
 使用 `v-show` 也会达到相同的效果，我们将模板中的 `v-if` 修改为 `v-show`
 
@@ -432,7 +432,7 @@ const vm = new Vue({
 </div>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210327204536.gif" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210327204536.gif" style="zoom:50%;" />
 
 那么二者有何不同? `v-show` 是控制元素的 `display` 属性来控制元素是否显示与否的，而 `v-if` 则是从 `DOM` 树上移除元素或者添加元素，并且 `v-if` 是惰性的，所谓惰性指的是如果一开始渲染条件为 `false`，那么什么也不做，只有当条件第一次为真时，才会开始渲染。
 
@@ -475,7 +475,7 @@ const vm = new Vue({
 
 我们对三个标签使用了 `v-if` `v-else-if` `v-else` 三个指令，根据 `count` 对 `3` 余数的值来决定显示哪一个
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210327214103.gif" alt="4" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210327214103.gif" alt="4" style="zoom:50%;" />
 
 #### v-for
 
@@ -558,7 +558,7 @@ const vm = new Vue({
 
 上面我们在 `input` 中使用了 `v-model` 指定，它与数据 `message` 进行了绑定，这就意味着当我们输入字符时，数据 `message` 会发生改变，当我们改变数据 `message` 时，输入框中的内容也会发生改变
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328102741.gif" alt="2" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328102741.gif" alt="2" style="zoom:50%;" />
 
 `v-model` 其实就是一个语法糖
 
@@ -628,7 +628,7 @@ const vm = new Vue({
 
 当 `Vue` 解析模板时，会使用 `reversedMessage` 方法的返回值来替代模板中引用的计算属性。在计算属性中我们依赖了在 `data` 中定义的数据，当 `data` 中的数据发生改变时，计算属性也会相应的发生改变，所以计算属性也是与视图进行绑定的。
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328100839.png" alt="image-20210328100839231" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328100839.png" alt="image-20210328100839231" style="zoom:50%;" />
 
 另外值得一提的是，计算属性是有缓存的，如果在多处访问计算属性，只会调用一次 `computed` 中定义的方法，然后将其结果缓存起来 ，如果在模板中有多处使用计算属性，除了第一次需要计算，后面直接使用缓存即可，所以对于一些计算复杂，耗时的任务我们便可以使用计算属性
 
@@ -669,11 +669,11 @@ const vm = new Vue({
 
 并且我们新增了一个数据项 `count`，当我们每次调用 `computed` 属性中的 `reversedMessage` 便会对 `count` 进行递增，虽然我们在模板中引用了三次计算属性，但是因为计算属性有缓存，所以 `count` 的计数应该为 1，页面显示如下
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328100526.png" alt="image-20210328100526820" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328100526.png" alt="image-20210328100526820" style="zoom:50%;" />
 
 计算属性也会被挂载到 `Vue` 实例 `vm` 上，所以我们可以直接通过 `vm.xxx` 的形式访问计算属性
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328101008.png" alt="image-20210328101008233" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328101008.png" alt="image-20210328101008233" style="zoom:50%;" />
 
 ### 监听器
 
@@ -721,7 +721,7 @@ watch: {
 
 当我们向输入框输入数据时，`question` 就会发生改变，就会执行上述 `question` 中的 `handler` 方法，在这个方法中我们将数据 `message` 设置为 `question` 的翻转
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328111522.gif" alt="3" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328111522.gif" alt="3" style="zoom:50%;" />
 
 监听器还可以接收两个参数，分别为更新前的值与更新后的值
 
@@ -775,7 +775,7 @@ watch: {
 
 上面的代码很简单，我们设置了两个属性 `message` 与 `reversedMessage`，并且我们监听了 `message`，当 `message` 发生变化时，便会将 `reversedMessage` 设置为 `message` 的翻转。此时的页面显示为
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328112812.png" alt="image-20210328112812520" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328112812.png" alt="image-20210328112812520" style="zoom:50%;" />
 
 `reversedMessage` 的内容为空，并不是 `message` 的翻转，这是因为只有当 `message` 发生变化时，`watch` 中的方法才会执行。如果我们希望立即执行，那么我们便要设置 `immediate` 参数为 `true`
 
@@ -792,7 +792,7 @@ watch: {
 
 此时页面显示为
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328113030.png" alt="image-20210328113030563" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328113030.png" alt="image-20210328113030563" style="zoom:50%;" />
 
 #### deep
 
@@ -834,7 +834,7 @@ watch: {
 
 在 `data` 中我们定义了一个数据 `user`，它是一个对象，包含两个字段 `username` 和 `gender`；在模板中，我们使用插值语法使用了这两个数据，并且当我们点击 `username` 时，会修改 `username` 的值；在 `watch` 中我们监听了 `user`，当 `user` 发生改变时，会设置 `gender` 的值
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328123613.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328123613.gif" alt="1" style="zoom:50%;" />
 
 上面我们点击 `username` 时，`username` 的值的确发生了改变，但是 `gender` 并没有发生改变，这是为什么? 这个也很容易理解，我们使用 `watch` 监听 `user`，但是当我们修改 `user.username` 的时候，`user` 根本没有发生改变，如果我们希望修改对象的属性也能被监听到，那么我们应该设置 `deep` 属性为 `true`
 
@@ -849,7 +849,7 @@ watch: {
 }
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328124118.gif" alt="2" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328124118.gif" alt="2" style="zoom:50%;" />
 
 > 计算属性与监听器：
 >
@@ -864,7 +864,7 @@ watch: {
 
 `Vue` 实例的完整生命周期如下图所示，现在你不需要弄懂所有的东西，但随着对 `Vue` 使用的深入，它的参考价值会越来越高
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328130008.png" alt="lifecycle" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328130008.png" alt="lifecycle" style="zoom:50%;" />
 
 上图牵涉到如下钩子函数：
 
@@ -921,7 +921,7 @@ watch: {
 
 的顺序执行，控制台打印结果如下
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328132440.png" alt="image-20210328132440613" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328132440.png" alt="image-20210328132440613" style="zoom:50%;" />
 
 当我们更新数据的时候，会重新渲染页面，在渲染页面之前会调用 `beforeUpdate` 函数，渲染之后会调用 `updated` 函数(这两个钩子函数的用处不大，很少使用)。
 
@@ -936,7 +936,7 @@ watch: {
 
 一个页面一般由很多个部分组成，例如 `header` `main` `footer` 等部分
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328140752.png" alt="components" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328140752.png" alt="components" style="zoom:50%;" />
 
 我们把这些部分称之为组件，通过使用组件搭建页面，就像搭积木一样搭建页面，组件可以在不同的页面直接复用(包括样式以及逻辑)，复用性得到了增强，并且易于维护。
 
@@ -1005,7 +1005,7 @@ Vue.component("my-list", {
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328142601.png" alt="image-20210328142540521" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328142601.png" alt="image-20210328142540521" style="zoom:50%;" />
 
 我们还可以通过如下声明一个局部组件
 
@@ -1039,7 +1039,7 @@ const vm = new Vue({
 </div>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328143258.png" alt="image-20210328143258065" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328143258.png" alt="image-20210328143258065" style="zoom:50%;" />
 
 ### props
 
@@ -1154,7 +1154,7 @@ props: {
 <my-list ></my-list>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328194957.png" alt="image-20210328194957209" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328194957.png" alt="image-20210328194957209" style="zoom:50%;" />
 
 因为没有传入数据，所以使用默认值，并且因为我们要求必须传入数据 `required: true`，所以在控制台给出了一个警告。
 
@@ -1192,7 +1192,7 @@ const vm = new Vue({
 })
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328201744.png" alt="image-20210328201744565" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328201744.png" alt="image-20210328201744565" style="zoom:50%;" />
 
 如果不希望根元素直接继承属性，那么可以在组件的选项中设置 `inheritAttrs: false`
 
@@ -1203,7 +1203,7 @@ Vue.component('my-list', {
 })
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328201836.png" alt="image-20210328201836371" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328201836.png" alt="image-20210328201836371" style="zoom:50%;" />
 
 这时我们发现根元素上没有继承传入的属性了。但是我们可以通过 `$attrs` 获得父组件传入的属性，它是一个对象，我们可以自己决定将属性赋予哪个元素
 
@@ -1216,7 +1216,7 @@ Vue.component('my-list', {
 
 上面我们决定将所有接收到的且未在 `props` 中声明的属性全部放在 `p` 标签上
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328202103.png" alt="image-20210328202103131" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328202103.png" alt="image-20210328202103131" style="zoom:50%;" />
 
 > 注意：在 `props` 中已经声明的属性不会在 `$attrs` 中出现。
 
@@ -1274,7 +1274,7 @@ Vue.component('my-list', {
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328204441.png" alt="image-20210328204441061" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328204441.png" alt="image-20210328204441061" style="zoom:50%;" />
 
 我们希望当我们点击添加课程的按钮时，向父组件的 `courses` 添加一门课程，也就是如何将子组件的数据传递到父组件。要做到这件事情，只能通过回调函数的方式将数据传递给父组件，首先我们为组件 `course-add` 绑定一个自定义的事件
 
@@ -1307,7 +1307,7 @@ methods: {
 }
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328205642.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328205642.gif" alt="1" style="zoom:50%;" />
 
 我们再次捋一捋流程：
 
@@ -1356,7 +1356,7 @@ const vm = new Vue({
 })
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328213116.gif" alt="2" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210328213116.gif" alt="2" style="zoom:50%;" />
 
 因为向单选框、复选框这样的输入控件可能会将 `value` 用于不同的目的，我们可以通过 `model` 属性避免这样的冲突
 
@@ -1417,7 +1417,7 @@ const vm = new Vue({
 })
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329135906.gif" alt="3" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329135906.gif" alt="3" style="zoom:50%;" />
 
 ## 插槽
 
@@ -1684,7 +1684,7 @@ Vue 提供了 `transition` 组件，可以为任何组件以及元素提供进�
 
 对于离场动画也是同理，在离场之前会添加一个 `v-leave` 类，用以定义动画的初始状态，动画开始后被移除，在离场的过程中会添加 `v-leave-active` 和 `v-leave-to` 类，分别用以动画的过渡状态以及动画最终状态。
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329104254.png" alt="transition" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329104254.png" alt="transition" style="zoom:50%;" />
 
 ```css
 .fade-enter, .fade-leave-to {
@@ -1700,7 +1700,7 @@ Vue 提供了 `transition` 组件，可以为任何组件以及元素提供进�
 
 效果如下：
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329105850.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329105850.gif" alt="1" style="zoom:50%;" />
 
 除了可以使用 `transition` 属性定义过渡状态，还可以使用 `animation` 动画，例如
 
@@ -1724,7 +1724,7 @@ Vue 提供了 `transition` 组件，可以为任何组件以及元素提供进�
 }
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329111853.gif" alt="2" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329111853.gif" alt="2" style="zoom:50%;" />
 
 ### 使用 CSS 动画库
 
@@ -1770,7 +1770,7 @@ Vue 提供了 `transition` 组件，可以为任何组件以及元素提供进�
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329123508.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329123508.gif" alt="1" style="zoom:50%;" />
 
 ### 使用 JS 动画库
 
@@ -1834,7 +1834,7 @@ Vue 过渡系统还提供了一系列的钩子函数：
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329125635.gif" alt="2" style="zoom: 50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210329125635.gif" alt="2" style="zoom: 50%;" />
 
 ## 参考文献
 

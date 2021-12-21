@@ -220,7 +220,7 @@ use: ["style-loader", "css-loader"]
 
 我们运行 `npm run dev`，在 `http://localhost:3000` 可以观察到下面的页面
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200719104455.png" width="80%"/>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200719104455.png" width="80%"/>
 
 说明我们的配置成功了。
 

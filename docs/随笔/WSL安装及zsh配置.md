@@ -20,7 +20,7 @@ commentid: essay:wsl-zsh
 如果你上网搜索如何安装 `WSL`，一般都是让你在 `PowerShell` 依次运行这两个命令(需要管理员身份)
 
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031228482021-10-03-12-28-49.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031228482021-10-03-12-28-49.png" style="zoom:50%"/>
 
 
 
@@ -34,20 +34,20 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 但是每次我运行都会报错(现在演示不了了，因为我现在不报错了)，然后我在网上找到一篇文章[如何在 Windows 10 中安装 WSL2 的 Linux 子系统](https://blog.walterlv.com/post/how-to-install-wsl2.html)可以在 **Windows 功能** 启动这两个功能
 
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031114072021-10-03-11-14-08.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031114072021-10-03-11-14-08.png" style="zoom:50%"/>
 
 
 
 把**适用于 Linux 的 Windows 子系统**和**虚拟机平台**勾上
 
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031119272021-10-03-11-19-28.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031119272021-10-03-11-19-28.png" style="zoom:50%"/>
 
 
 然后点确定，这时系统会提示你重启，同意即可。重启之后打开应用商店，搜索 `Linux`，选择一个版本下载
 
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031122042021-10-03-11-22-04.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031122042021-10-03-11-22-04.png" style="zoom:50%"/>
 
 
 我选择的是 `Ubuntu 20.04 LTS`，点击进行下载，下载完成之后运行该 `Linux` 系统，还会进行一次安装
@@ -58,7 +58,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 安装完成之后，会让你设置用户名和密码，正常设置即可，设置完就安装完成了
 
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031127382021-10-03-11-27-38.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031127382021-10-03-11-27-38.png" style="zoom:50%"/>
 
 
 为了能够使用 `ssh` 工具远程访问，我们需要下载一些东西，并进行相关的配置，首先在 `WSL` 中依次运行如下两个命令
@@ -234,7 +234,7 @@ sudo vim ~/.zshrc
 ```
 
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031312332021-10-03-13-12-34.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031312332021-10-03-13-12-34.png" style="zoom:50%"/>
 
 
 
@@ -247,7 +247,7 @@ source ~/.zshrc
 效果如下所示
 
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031316582021-10-03-13-16-58.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031316582021-10-03-13-16-58.png" style="zoom:50%"/>
 
 
 ### 安装插件
@@ -255,7 +255,7 @@ source ~/.zshrc
 我们可以查看 `~/.zshrc` 来看安装了哪些插件
 
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031347092021-10-03-13-47-10.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031347092021-10-03-13-47-10.png" style="zoom:50%"/>
 
 
 默认只有 `git` 插件，该插件提供了很多 `git` 命令的缩写，例如
@@ -307,7 +307,7 @@ source ~/.zshrc
 效果如下
 
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031517142021-10-03-15-17-14.png" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting3/202110031517142021-10-03-15-17-14.png" style="zoom:50%"/>
 
 
 ## 参考文章

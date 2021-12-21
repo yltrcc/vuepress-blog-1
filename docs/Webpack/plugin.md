@@ -72,7 +72,7 @@ output: {
 每次生成的文件由名字和文件内容生成的 `hash` 值组成，每次我们修改程序，然后打包，就会产生不同的哈希值，所以 `dist` 下的文件会不断的增多，我们根本不知道哪个文件是我们最新打包出来的，如下
 
 <center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200719153829.png" width="40%"/>
+    <ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200719153829.png" width="40%"/>
 </center>
 
 所以我们就有这个需要，在生成新的打包文件之前，将之前的打包文件进行删除。首先下载 `clean-webpack-plugin`
@@ -154,7 +154,7 @@ module.exports = {
 
 只是一个标准的 `html` 文件，里面什么都没有。运行 `npm run build` 即可观察到在 `dist` 文件夹下生成了一个 `index.html` 文件
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200719160224.png" width="40%"/>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200719160224.png" width="40%"/>
 
 生成的 `index.html` 的内容如下
 

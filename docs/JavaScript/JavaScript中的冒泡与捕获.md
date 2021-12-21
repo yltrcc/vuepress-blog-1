@@ -38,7 +38,7 @@ title: JavaScript中的冒泡与捕获
 就是一个大盒子里面套着一个小盒子，为两个盒子设置了背景颜色以作区分，如下
 
 <center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17_150014.png"/>
+    <ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17_150014.png"/>
 </center>
 
 现在为二者都添加一个点击方法
@@ -63,7 +63,7 @@ title: JavaScript中的冒泡与捕获
 现在点击绿色的小盒子，看看输出是什么
 
 <center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17-15-09.gif"/>
+    <ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17-15-09.gif"/>
 </center>
 
 当我们点击里面的盒子即`inner`时，触发了它的点击事件，随后触发了`outer`的点击事件，这样触发子元素事件之后触发父元素事件的行为就叫做冒泡；捕获就是随之相反了，先处理`outer`，然后处理`inner`的事件。
@@ -84,7 +84,7 @@ inner.addEventListener('click', (e) => {
 这时我们在点击里面的盒子
 
 <center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17-15-17.gif"/>
+    <ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17-15-17.gif"/>
 </center>
 
 这时是`outer`的点击事件先被执行，然后是`inner`的点击事件被执行。
@@ -161,7 +161,7 @@ inner.addEventListener('click', (e) => {
 上面四个盒子套在一起，我们为`one`和`three`设定为捕获模式，为`two`和`four`设定为冒泡模式，如果我们点击`four`，这时的输出会是什么呢?
 
 <center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17-15-50.gif"/>
+    <ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17-15-50.gif"/>
 </center>
 
 我们观察到输出的顺序为`one -> three -> four -> two`，代码是怎么执行的呢? 首先事件处理器会从顶部开始即`one`(严格的说是从`window`)，一直到目标元素，在这个路径中，如果遇到设置为捕获模式的则执行，碰到冒泡模式的则跳过，达到目标元素后，开始转换为冒泡模式，向上冒泡到`one`，在这个路径中，如果碰到设置为冒泡模式的则执行，否则跳过。
@@ -237,7 +237,7 @@ inner.addEventListener('click', (e) => {
 这时我们点击`inner`，这时只有`inner`的点击事件被执行了
 
 <center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17-16-22.gif"/>
+    <ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/2020-03-17-16-22.gif"/>
 </center>
 
 

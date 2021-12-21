@@ -9,7 +9,7 @@ HTML (Hyper Text Markup Language)，翻译为超文本标记语言，我们使�
 
 ```html
 <h1>这是一个大标题</h1>
-<img src="..." alt="">
+<ImageView src="..." alt="">
 ```
 
 其中 `h1` 以及 `img` 称为标签，`h1` 表示一级标题，而 `img` 表示一张图片，具体更多的标签会在后文介绍。
@@ -23,7 +23,7 @@ HTML (Hyper Text Markup Language)，翻译为超文本标记语言，我们使�
 
 目前(2021-03)浏览器的使用占比
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210407235855.png" alt="image-20210407235855288" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210407235855.png" alt="image-20210407235855288" style="zoom:50%;" />
 
 Chrome 浏览器的使用率名列前茅，第二名是 Safari，是苹果自家的浏览器，后面便是 Firefox 与 Edge。建议使用 Chrome 浏览器。
 
@@ -51,7 +51,7 @@ Chrome 浏览器的使用率名列前茅，第二名是 Safari，是苹果自家
 
 上面是一个最简单的 `html` 文件，他会在浏览器渲染出如下页面
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210409212558.png" alt="image-20210409212558071" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210409212558.png" alt="image-20210409212558071" style="zoom:50%;" />
 
 代码的第一行
 

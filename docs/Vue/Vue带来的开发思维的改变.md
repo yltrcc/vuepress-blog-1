@@ -62,7 +62,7 @@ document.body.append(ulEle);
 
 上面的程序可能看不懂，毕竟还没有开始学，所以不必担心。从代码量上看，二者似乎相差不大，可能还有点多，但是当我们更新数组时，我们不必操作 DOM 树来更新页面了，当数据发生变化时，Vue 自动地帮我们更新页面，这种模式我们称为 MVVM，其中的 V 表示 View，表示的视图，而 M 表示 Model，表示的是数据，而 `Vue` 充当的角色是 VM，它将数据与视图进行了绑定，当数据发生变化时，视图也会相应的**自动**更新，如下图
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210325225532.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210325225532.png" style="zoom:50%;" />
 
 所以 Vue 给我们带来开发思维上的改变就是，**我们只需要操作数据即可，更新页面的工作 Vue 会自动的帮我们完成**
 

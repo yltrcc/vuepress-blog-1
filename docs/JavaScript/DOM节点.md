@@ -8,7 +8,7 @@ DOM 的全称为 Document Object Model，翻译为**对象文本模型**，它�
 
 下面给出了 HTML 文档翻译成 DOM 树的例子
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928102721.png" alt="DOM" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928102721.png" alt="DOM" style="zoom:50%;" />
 
 
 `document` 节点是每一个文档的根节点，HTML 文档中的元素都会被转化为 DOM 树中的节点。
@@ -50,7 +50,7 @@ Node.ELEMENT_NODE == 1; // true
 
 DOM 树借鉴了家庭族谱的概念，使用父亲、孩子、兄弟等亲属关系来描述节点之间的关系，我们将对如下 DOM 树来描述节点之间的关系
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928131258.png" width="50%"/>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928131258.png" width="50%"/>
 
 
 每一个节点都有一个 `childNodes` 属性，它保存着它的所有子节点，该属性是一个 `NodeList` 对象，它是一个类数组，我们可以通过数字下标来访问父节点中的某个子节点，但它不是真正的数组。
@@ -89,7 +89,7 @@ span.firstChild == null;
 
 下图形象的展示了节点之间的关系
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928141557.png" alt="Untitled Diagram" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928141557.png" alt="Untitled Diagram" style="zoom:50%;" />
 
 
 ### 操作节点
@@ -100,7 +100,7 @@ Node 接口提供了几个方法用以操作节点，包括添加节点，删除
 
 该方法接收一个参数，为 Node 类型的节点，而该方法的作用就是将接收的节点添加为最后一个节点
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928191330.png" alt="DOM4-Page-4" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928191330.png" alt="DOM4-Page-4" style="zoom:50%;" />
 
 
 此时新添加的节点为最后一个节点，即
@@ -111,7 +111,7 @@ div.lastChild == a;
 
 如果添加的节点是已经存在于文档树中的，那么此时会将该节点移动到最后一个节点，假设有如下的 DOM 树，现在我们将节点 img 添加到 div 的子节点中，那么此时就相当于将 h2 下的 img 移动到 div 下
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928182303.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928182303.png" style="zoom:50%;" />
 
 
 任何一个节点都只能有一个父节点。
@@ -120,7 +120,7 @@ div.lastChild == a;
 
 `appendChild` 方法是将节点插入到最后面，而 `insertBefore` 则是将节点插入到某个节点之前，所以该方法接收两个参数，第一个参数是要插入的节点，我们将这个节点插入到第二个参数表示的节点的前面
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928190740.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928190740.png" style="zoom:50%;" />
 
 
 同理，如果添加的节点也在文档树种，那么会将该节点移动，**任何一个节点都不可能有两个父节点**。
@@ -129,7 +129,7 @@ div.lastChild == a;
 
 `removeChild` 是用来删除节点的，该方法接收一个参数，就是你要删除的节点，被删除的节点将会作为返回值返回，如下图
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928191826.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928191826.png" style="zoom:50%;" />
 
 
 被删除的节点仍然属于文档树，但是在文档树中已经没有了它的位置。
@@ -138,7 +138,7 @@ div.lastChild == a;
 
 `replaceChild` 参数是用一个节点替换一个节点，所以该方法接收两个参数，新的节点以及被替换的节点
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928192916.png" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928192916.png" style="zoom:50%;" />
 
 
 ### 其他方法
@@ -189,7 +189,7 @@ let newUl = ul.cloneNode(true);
 
 该方法是用来处理节点中的文本节点，它会将空白节点删除，以及将连续的两个文本节点合并为一个文本节点
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928195506.png" alt="DOM4-Page-6" style="zoom:50%;" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200928195506.png" alt="DOM4-Page-6" style="zoom:50%;" />
 
 
 ## Document
@@ -260,7 +260,7 @@ let images = document.getElementsByTagName("img"); // 获得文档中所以的 i
 我们获得 `images` 是一个 HTMLCollection 对象，它除了可以使用下标的形式获得集合中的元素，还可以通过 `namedItem` 来获得相应的元素，假设文档中有一个 img 如下
 
 ```html
-<img name="img1" src="" />
+<ImageView name="img1" src="" />
 ```
 
 该 img 有一个 name 属性为 img1，那么我们可以通过下面的方式来获得该节点

@@ -58,7 +58,7 @@ console.log(value)
 
 因为使用 `let` 声明的变量拥有块级作用域，所以如果在作用域外访问变量，那么就会报错，如上面的代码会报下面的错误
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210112224158.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210112224158.png" style="zoom:50%;" />
 
 `const` 的用法和 `let` 是相同的，不同的是使用 `const` 声明的变量，它的值不能被更改，所以 `const` 声明的变量在声明时就要做初始化，如果没有做初始化，则会报错
 
@@ -66,7 +66,7 @@ console.log(value)
 const value
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210112224016.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210112224016.png" style="zoom:50%;" />
 
 同样如果对 `const` 定义的变量进行修改的话，也会报错
 
@@ -75,7 +75,7 @@ const value = 'hello'
 value = 'world'
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210112224323.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210112224323.png" style="zoom:50%;" />
 
 但是如果 const 修饰的变量是一个对象的话，我们可以修改变量的属性值，例如
 
@@ -104,7 +104,7 @@ person = {
 
 对于使用 let 和 const 定义的变量，它们的声明不会被编译器提升到作用域的开头，该变量所在的作用域的开始到该变量声明的地方之间的区域叫做暂时性死区
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210112224355.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210112224355.png" style="zoom:50%;" />
 
 在暂时性死区访问变量会发生错误，即使是 `typeof` 这么安全的操作符都不行
 

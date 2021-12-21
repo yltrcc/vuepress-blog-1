@@ -10,7 +10,7 @@ commentid: webpack:introduce
 
 这里贴一张官网的图片
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200715101557.png"/>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200715101557.png"/>
 
 通过官网的图片可以看出，`webpack` 可以将依赖的文件打包成单个的资源文件。
 

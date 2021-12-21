@@ -30,7 +30,7 @@ console.log(target.name); // Bob
 
 Proxy 可以拦截下面的一些行为
 
-<img src="https://user-images.githubusercontent.com/29890094/106619623-becf4600-65ab-11eb-991e-5bf2eaff379f.png" style="zoom:50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/106619623-becf4600-65ab-11eb-991e-5bf2eaff379f.png" style="zoom:50%;" />
 
 下面就具体介绍用法。
 
@@ -99,7 +99,7 @@ proxy.gender = "male";
 console.log(proxy.sex);
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210121155508.png" alt="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210121155508.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210121155508.png" alt="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210121155508.png" style="zoom:50%;" />
 
 ## has
 

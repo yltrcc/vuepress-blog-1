@@ -86,7 +86,7 @@ private ListNode mergeTwoList(ListNode l1, ListNode l2) {
 
 然后一提交，发现只超过了 24% 的人
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326112949.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326112949.png" style="zoom:50%;" />
 
 说明肯定有更快的算法，我便去找题解，在题解中发现发现使用分治的思路可以更快的得到排序好的数组。由于老弟我归并排序已经写得炉火纯青了，很快得到了第二版的代码
 
@@ -114,7 +114,7 @@ private ListNode mergeKLists(ListNode[] lists, int left, int right) {
 
 再次提交
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326113204.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326113204.png" style="zoom:50%;" />
 
 已经打败 87% 的人了，时间从 120ms 降到了 2ms，再次感受到了算法的魅力。
 

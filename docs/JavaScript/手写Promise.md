@@ -75,9 +75,7 @@ value => {
 
 `fn2` 接收的参数 `value` 是通过 `resolve` 传入的，在上面我们通过 `resolve(1)` 传入了参数 `1`，所以 `fn2` 接受到的参数为 `1`。上面执行的结果为
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006271412.gif" width="70%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006271412.gif" width="70%" />
 
 可见 `fn2` 是在 `resolve` 函数之后执行的，这样就可以保证代码执行的顺序，并且不用写嵌套的回调函数，而是使用 `then` 方法进行"平行"的调用。
 
@@ -125,9 +123,8 @@ p.then(value => { // fn2
 
 在上面我们调用了没有传入回调函数 `then` 之后又继续调用了一个 `then`，根据我们上面所讲的，`fn3` 接受的参数 `value` 是第二个 `then` 回调函数的返回值，但是由于第二个 `then` 没有回调函数，意味着根本没有返回值，这个时候会把上一层的返回值即 `fn2` 返回值传到 `fn3`
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/2020-06-27_151501.png" width="60%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/2020-06-27_151501.png" width="60%" />
+
 
 所以上面的输出是
 
@@ -159,15 +156,13 @@ p.then(value => { // fn1
 
 `fn2` 在 `fn1` 返回的 `Promise` 进入了 `fulfilled` 状态之后才会被执行
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/2020-06-27_172352.png" width="70%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/2020-06-27_172352.png" width="70%" />
+
 
 上面的执行结果为
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006271735.gif" width="70%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006271735.gif" width="70%" />
+
 
 ### 原型方法
 
@@ -331,15 +326,14 @@ Promise.all([p1, p2, p3]).then(results => {
 
 在上面我们定义三个 `Promise` 对象，这个三个对象分别在 `1s, 2s, 3s` 后变为 `fulfilled`，所以返回的 `Promise` 对象在 `3s` 后变为 `fulfilled` 状态，并且会将这三个 `Promise` 对象向 `resolve` 传入的值形成数组传入到返回的 `Promise` 的 `resolve` 中
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/2020-06-27_205058.png" width="70%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/2020-06-27_205058.png" width="70%"/>
+
 
 上面代码的执行结果为
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272055gif.gif" width="70%"/>
-</center>
+
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272055gif.gif" width="70%"/>
+
 
 #### race
 
@@ -374,15 +368,12 @@ Promise.race([p1, p2, p3]).then(result => {
 
 并且会将向最快变为 `fulfilled` 状态的 `Promise` 对象的 `resolve` 传入的值传入到返回的 `Promise` 对象的 `resolve` 方法中
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/2020-06-27_210818.png" width="70%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/2020-06-27_210818.png" width="70%"/>
+
 
 所以上面程序的执行结果为
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272114.gif" width="70%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272114.gif" width="70%"/>
 
 可见当 `p1` 变为 `fulfilled` 之后，返回的 `Promise` 也变为了 `fulfilled` 状态，并且拿到了向 `p1` 的 `resolve` 中传入的值。
 
@@ -479,9 +470,7 @@ p.then(value => {
 
 结果如下
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272145.gif" width="70%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272145.gif" width="70%"/>
 
 ### 链式调用
 
@@ -573,9 +562,7 @@ p.then(value => {
 
 上面的执行结果为
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272223.gif" width="70%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272223.gif" width="70%"/>
 
 上面我们还要最后一个问题没有解决，就是如果 `then` 中的回调函数返回的是 `Promise` 对象，那么我们就要在  `_resolve` 对值进行判断，如果值是 `Promise` 对象，记作 `p1`，那么 `then` 返回的 `Promise` 对象 `p2` 的 `resolve` 方法应当在 `p1` 对象的 `resolve` 执行之后执行。修改 `_resolve` 如下
 
@@ -623,9 +610,7 @@ p.then(value => {
 
 执行结果为
 
-<center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272239.gif" width="70%"/>
-</center>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/202006272239.gif" width="70%"/>
 
 ### 原型方法
 

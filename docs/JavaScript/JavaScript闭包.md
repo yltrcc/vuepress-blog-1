@@ -184,7 +184,7 @@ document.getElementById("box1").addEventListener('click', function () {
 })
 ```
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/202004172341.gif"/>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/202004172341.gif"/>
 
 
 但是当我们同时对两个元素使用动画时，由于二者共享变量 `tick`，则会导致二者的动画状态发生冲突，所以我们改动如下
@@ -212,7 +212,7 @@ document.getElementById("box2").addEventListener('click', function () {
 
 我们将 `tick` 定义在函数内，由于闭包，`setInteval` 中的回调函数可以访问到tick，并且两个不同`id` 元素的`tick`是不同的，不会相互干扰
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/202004080010.gif"/>
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/202004080010.gif"/>
 
 
 

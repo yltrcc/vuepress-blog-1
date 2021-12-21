@@ -104,7 +104,7 @@ new Vue({
 
 此时页面如下
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405205801.png" alt="image-20210405205801675" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405205801.png" alt="image-20210405205801675" style="zoom:50%;" />
 
 我们能够访问 `store` 中的数据了，接着我们看如何修改页面的数据，最简单的方法就是直接通过 `$store.state` 进行修改。我们为按钮添加点击事件
 
@@ -128,7 +128,7 @@ export default {
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405210448.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405210448.gif" alt="1" style="zoom:50%;" />
 
 修改成功了，但是我们在上面提及过，我们不能直接修改状态，因为直接修改状态我们无法记录状态的变化，导致我们调试时无法知道状态是如何变化的，如果我们要更改状态的话，需要发起一个请求让 `Vuex` 帮我们修改数据，发起请求的方法便是 `store.commit`，该方法接收两个参数：
 
@@ -146,7 +146,7 @@ methods: {
 },
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405211824.gif" alt="2" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405211824.gif" alt="2" style="zoom:50%;" />
 
 通过 `vue-devtools`，我们可以观察到每一次数据变化的记录，并且我们可以回到之前任意的一个状态(时空旅行)，这会为我们调试程序带来巨大的方便。
 
@@ -193,7 +193,7 @@ incrementByTen() {
 
 注意到此时我们为 `commit` 传递第二个参数 `payload`，它会被传递给 `mutations` 中的  `incrementBy` 方法，`incrementBy` 会据此修改数据
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405213405.gif" alt="4" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405213405.gif" alt="4" style="zoom:50%;" />
 
 > 我们可以启用严格模式，当用户视图直接修改状态时，将会在控制台给出警告。启动严格模式的方法如下
 >
@@ -211,7 +211,7 @@ incrementByTen() {
 > })
 > ```
 >
-> <img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405212412.gif" alt="3" style="zoom:50%;" />
+> <ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405212412.gif" alt="3" style="zoom:50%;" />
 >
 > 开启严格模式后，当我们直接修改数据时，控制台将会给出警告，当然并不能阻止你修改数据。
 
@@ -359,11 +359,11 @@ methods: {
 }
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405221552.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210405221552.gif" alt="1" style="zoom:50%;" />
 
 至此给出 `Vuex` 的工作的过程，想必大家可以很容易的看懂了
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210406135133.png" border="none" alt="vuex-gigapixel-scale-2_00x" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210406135133.png" border="none" alt="vuex-gigapixel-scale-2_00x" style="zoom:50%;" />
 
 ### modules
 
@@ -435,7 +435,7 @@ export default {
 
 当我们点击按钮时，我们会发现所有的 `mutation` 都被触发了
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210406104459.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210406104459.gif" alt="1" style="zoom:50%;" />
 
 对于 `actions` 也是一样，也会触发所有符合条件的 `actions`。因为模块中的 `action` 与 `mutation` 都是注册在全局命名空间的，如果希望模块具有更高的封装性，可以为模块添加 `namespaced: true` 属性，模块中的 `action` 与 `mutation` 会被注册到 `moduleName/` 下，因此我们可以通过 `commit('moduleName/inc')` 来触发模块下的 `mutation`
 
@@ -499,7 +499,7 @@ export default {
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210406111051.gif" alt="2" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210406111051.gif" alt="2" style="zoom:50%;" />
 
 > 使用了命名空间之后，在 `action` 接收到的 `dispatch` 与 `commit` 均是局部化的，换句话说，在 `action` 中 `dispatch` 其他 `action` 或者 `commit` 一个 `mutation` 不需要添加模块前缀
 >

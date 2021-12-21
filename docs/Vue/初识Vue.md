@@ -49,7 +49,7 @@ commentid: vue:start-vue
 
 页面上显示的内容如下：
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326190835.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326190835.png" style="zoom:50%;" />
 
 ## 发生了什么
 
@@ -93,23 +93,23 @@ const vm = new Vue({
 
 模板经过 `Vue` 解析、渲染以后，然后根据该模板生成一个 DOM 元素挂载在页面中，而这个 DOM 元素我们可以通过 `vm.$el` 进行访问得到
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204150.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204150.png" style="zoom:50%;" />
 
 ### $data
 
 通过 `vm.$data` 可以得到 `data` 属性返回的对象
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204437.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204437.png" style="zoom:50%;" />
 
 我们可以通过 `vm.$data` 来修改数据
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204658.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204658.png" style="zoom:50%;" />
 
 上面我们修改数据 `message` 为 `Hello Vue`，页面便发生了变化，进一步证实了数据与视图的绑定。
 
 为了方便通过 `vm` 操作数据，所有的数据都被挂载到了 `vm` 上，即我们可以直接通过 `vm` 访问以及修改数据，而不必通过 `vm.$data`
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204947.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210326204947.png" style="zoom:50%;" />
 
 上面我们通过 `vm.message` 直接修改了数据，页面也立即发生了变化。
 

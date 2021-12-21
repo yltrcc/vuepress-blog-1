@@ -119,7 +119,7 @@ new Vue({
 }).$mount('#app')
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404133346.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404133346.gif" alt="1" style="zoom:50%;" />
 
 当我们点击链接时，地址栏发生变化，且渲染的组件也顺应变化。
 
@@ -138,7 +138,7 @@ new Vue({
 > })
 > ```
 >
-> <img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404134333.gif" alt="2" style="zoom:50%;" />
+> <ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404134333.gif" alt="2" style="zoom:50%;" />
 >
 > 这时地址栏上便没有 `#` 了。
 
@@ -216,7 +216,7 @@ const routes = [{
 </template>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404143251.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404143251.gif" alt="1" style="zoom:50%;" />
 
 有一点需要注意的是，动态路由组件进行切换时会进行组件复用，当路由从 `/user/1` 变为 `/user/2` 时并没有重新创建一个新的组件，而是复用了之前的组件。我们可以在 `created` 方法中打印信息，如果在切换组件时，信息始终只打印了一次，就说明组件只被创建了一次，即组件复用了
 
@@ -237,7 +237,7 @@ export default {
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404144349.gif" alt="2" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404144349.gif" alt="2" style="zoom:50%;" />
 
 组件复用能够带来性能上的优势，但是有的时候我们需要根据路由参数请求数据，因为组件复用的关系，无法通过生命周期钩子请求数据，这时我们可以通过监听器来监听 `$watch`，当路由发生变化时，我们便发起请求
 
@@ -263,7 +263,7 @@ export default {
 </script>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404145423.gif" alt="3" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404145423.gif" alt="3" style="zoom:50%;" />
 
 在组件中直接使用 `$route` 会使得组件与路由形成高度的耦合，我们希望路由参数能够通过 `props` 传递给组件。首先需要在路由定义中添加 `props` 属性，并声明为 `true`
 
@@ -348,7 +348,7 @@ a {
 </style>
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404153620.gif" alt="4" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404153620.gif" alt="4" style="zoom:50%;" />
 
 ## 编程式的导航
 
@@ -572,7 +572,7 @@ const routes = [{
 }]
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404172547.gif" alt="5" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210404172547.gif" alt="5" style="zoom:50%;" />
 
 当我们多次改变路由时，组件只被创建了一次，可见组件被缓存了。
 

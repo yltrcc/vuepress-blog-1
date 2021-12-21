@@ -60,11 +60,11 @@ vue serve Hello.vue
 
 `vue-cli` 会对 `Hello.vue` 进行一番处理，接着会在控制台打印如下信息
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401212443.png" alt="image-20210401212443197" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401212443.png" alt="image-20210401212443197" style="zoom:50%;" />
 
 我们可以在指定地址 `http://localhost:8080/` 查看该组件的原型，如下
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401212555.png" alt="image-20210401212555832" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401212555.png" alt="image-20210401212555832" style="zoom:50%;" />
 
 ## 创建一个项目
 
@@ -78,11 +78,11 @@ vue create 项目名
 
 接着 `Vue` 便会提示使用何种预设(preset)
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401213214.png" alt="image-20210401213214590" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401213214.png" alt="image-20210401213214590" style="zoom:50%;" />
 
 创建的项目结构如下所示
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401213459.png" alt="image-20210401213459184" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401213459.png" alt="image-20210401213459184" style="zoom:50%;" />
 
 其中 `main.js` 便是入口文件，内容如下
 
@@ -102,7 +102,7 @@ new Vue({
 ```vue
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <ImageView alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -144,31 +144,31 @@ npm run serve
 
 项目构建完成之后，我们便可以在 `http://localhost:8080/` 看到渲染后的页面
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401214614.png" alt="image-20210401214614127" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401214614.png" alt="image-20210401214614127" style="zoom:50%;" />
 
 ### vue ui
 
 除了通过命令行的方式创建一个项目，我们还可以通过图形化的界面创建一个项目。在命令行中输入 `vue ui`，便会在浏览器打开一个 `UI` 界面
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401214939.png" alt="image-20210401214939237" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401214939.png" alt="image-20210401214939237" style="zoom:50%;" />
 
 点击 `Create` 来创建一个新项目
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401215201.png" alt="image-20210401215200999" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401215201.png" alt="image-20210401215200999" style="zoom:50%;" />
 
 填写完信息后，便会让你选择预设
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401215324.png" alt="image-20210401215324558" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401215324.png" alt="image-20210401215324558" style="zoom:50%;" />
 
 选择完预设后便可创建项目了，创建完项目后便可在可视化页面启动项目
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401215910.png" alt="image-20210401215909891" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401215910.png" alt="image-20210401215909891" style="zoom:50%;" />
 
 ## 简单的 Vue 项目
 
 现在我们使用 `.vue` 组件的形式来实现下面的功能
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401224543.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210401224543.gif" alt="1" style="zoom:50%;" />
 
 这个功能在之前我们已经实现过了，主要分解为一个父组件，两个子组件
 
@@ -323,19 +323,19 @@ vue add router
 ```vue
 <template>
   <div id="app">
-    <img src="./assets/logo.png" alt="">
+    <ImageView src="./assets/logo.png" alt="">
   </div>
 </template>
 ```
 
 所有通过相对路径引入的资源都会被 `Webpack` 打包，对于图片资源会被放在根目录下面的 `img` 文件夹中，所以上面的引用实际上会被解析为
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402112055.png" alt="image-20210402112055792" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402112055.png" alt="image-20210402112055792" style="zoom:50%;" />
 
 我们也可以通过绝对路径来引入资源文件，因为项目 `public` 中的文件不会经过 `Webpack` 处理，而是会被直接复制到项目的根目录中，所以通过绝对路径引用的资源，就是在 `public` 文件夹中的资源。
 
 ```vue
-<img src="/assets/logo.png" alt="">
+<ImageView src="/assets/logo.png" alt="">
 ```
 
 就相当于访问 `public/assets/logo.png`。 
@@ -363,7 +363,7 @@ data() {
 接着在修改引入方式
 
 ```vue
-<img :src="`${publicPath}assets/logo.png`" alt="">
+<ImageView :src="`${publicPath}assets/logo.png`" alt="">
 ```
 
 > 如果是通过相对路径引入的资源，则不必这么麻烦，`Webpack` 会帮我们除了好一切，我们只需要在 `vue.config.js` 中定义好 `publicPath` 即可，所以尽可能使用相对路径引入资源。
@@ -371,7 +371,7 @@ data() {
 `Webpack` 为我们定义了一个别名，`@`，它表示项目的 `src` 目录，所以我们还可以通过下面的方式引用资源
 
 ```vue
-<img src="@/assets/logo.png" alt="">
+<ImageView src="@/assets/logo.png" alt="">
 ```
 
 ## CSS
@@ -441,7 +441,7 @@ export default {
 
 运行 `npm run serve` 查看页面
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402133949.png" alt="image-20210402133949397" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402133949.png" alt="image-20210402133949397" style="zoom:50%;" />
 
 要使得 `Component1` 中的样式不影响其他组件，我们需要为 `style` 标签添加 `scoped` 属性
 
@@ -458,15 +458,15 @@ export default {
 
 这时在观察页面
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402134236.png" alt="image-20210402134236913" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402134236.png" alt="image-20210402134236913" style="zoom:50%;" />
 
 这时发现只有 `Component1.vue` 组件有样式。其原理是会为 `Component1.vue` 组件添加自定义属性
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402134338.png" alt="image-20210402134338820" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402134338.png" alt="image-20210402134338820" style="zoom:50%;" />
 
 上面的组件是 `Component1`，下面的组件是 `Component2`，可见 `Component1` 上有一个自定义属性 `data-v-04421304`，接着使用一个属性选择器使得样式只对 `Component1` 生效
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402134524.png" alt="image-20210402134524797" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402134524.png" alt="image-20210402134524797" style="zoom:50%;" />
 
 ### Module CSS
 
@@ -493,7 +493,7 @@ export default {
 
 实际的类名为
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402140435.png" alt="image-20210402140435126" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210402140435.png" alt="image-20210402140435126" style="zoom:50%;" />
 
 `Component1_com_2ata3`，它的组成为 `组件名_类名_哈希串`。
 

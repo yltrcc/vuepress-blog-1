@@ -51,7 +51,7 @@ xhr.send(null);
 这个时候我们打开控制台，发现给出这样的错误信息
 
 <center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/Snipaste_2020-04-21_21-23-10.png"/>
+    <ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/Snipaste_2020-04-21_21-23-10.png"/>
 </center>
 
 因为网页的地址 `http://127.0.0.1:5501` 与服务器的地址 `http://127.0.0.1:4000` 它们的域名是不同的，所以它们是不同源的，所以这个请求是跨域的请求，而浏览器是不允许跨域请求的。那么浏览器为什么会提出同源策略，这是出于安全的考虑。同源策略包括两种：
@@ -116,7 +116,7 @@ server.listen(4000, function() {
 结果如下
 
 <center>
-    <img src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/Snipaste_2020-04-21_23-04-21.png"/>
+    <ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/img/Snipaste_2020-04-21_23-04-21.png"/>
 </center>
 
 

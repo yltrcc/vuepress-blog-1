@@ -485,7 +485,7 @@ let rec = new Shape("长方形");
 
 Shape 类是一个抽象类，它不能通过 new 来实例化，上面当我们 new Shape 时，会抛出一个错误
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210116191657.png" alt="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210116191657.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210116191657.png" alt="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210116191657.png" style="zoom:50%;" />
 
 我们可以实例化它的子类
 

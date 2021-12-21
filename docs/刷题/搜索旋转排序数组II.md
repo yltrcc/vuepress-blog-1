@@ -33,22 +33,22 @@ commentid: leetcode:搜索旋转排序数组II
 
 为了使用二分搜索法，我们来看旋转数组的一个性质，随意的将旋转数组分为两部分，其中一部分必然是有序的
 
-<img src="https://user-images.githubusercontent.com/29890094/122768280-07c33500-d2d6-11eb-8af1-920a74be40b6.png" style="zoom: 50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/122768280-07c33500-d2d6-11eb-8af1-920a74be40b6.png" style="zoom: 50%;" />
 
  我们只需要判断 `target` 是否在有序的那一部分中即可，如果 `target` 在有序的那一部分中，那么我们就可以扔掉无序的那一部分，如果不在有序的那一部分，则我们就扔掉有序的部分，在无序的部分中寻找，无论怎样我们都可以消灭一般的搜索范围
 
-<img src="https://user-images.githubusercontent.com/29890094/122769607-45748d80-d2d7-11eb-949a-c85cad057448.png" style="zoom: 50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/122769607-45748d80-d2d7-11eb-949a-c85cad057448.png" style="zoom: 50%;" />
 
 所以现在的关键是如何寻找到哪一部分有序，我们比较划分的那个点 `mid` 与 `start` 的大小
 
 - `nums[mid] > nums[start]`：左边有序
 - `nums[mid] < nums[start]`：右边有序
 
-<img src="https://user-images.githubusercontent.com/29890094/122770650-3e01b400-d2d8-11eb-99a7-689abe9c869f.png" alt="3" style="zoom: 50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/122770650-3e01b400-d2d8-11eb-99a7-689abe9c869f.png" alt="3" style="zoom: 50%;" />
 
 这里你可能会说，`nums[mid] == nums[start]` 的情况呢? 这个时候其实我们不能判断那边是有序的
 
-<img src="https://user-images.githubusercontent.com/29890094/122771385-f596c600-d2d8-11eb-9fcb-881045a036ba.png" alt="4" style="zoom:50%;" />
+<ImageView src="https://user-images.githubusercontent.com/29890094/122771385-f596c600-d2d8-11eb-9fcb-881045a036ba.png" alt="4" style="zoom:50%;" />
 
 这个时候我们就不能使用二分搜索了，只能暴力搜索了。
 

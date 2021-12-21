@@ -52,7 +52,7 @@ console.log(window.x); // 5
 
 全局变量与 `window` 对象上的属性有一点不同，全局变量不能通过 `delete` 操作符删除，而 `window` 上的对象可以通过 `delete` 操作符删除
 
-<img src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200922164943.png" width="35%" />
+<ImageView src="https://gitee.com/lastknightcoder/blogimage/raw/master/20200922164943.png" width="35%" />
 
 ### 窗口位置
 

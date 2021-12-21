@@ -11,17 +11,17 @@ commentid: css:debug-in-broswer
 
 要在浏览器中调试样式，一般都是按下 `F12` 或者 `Fn + F12` 就可以打开调试界面
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531212203.png" alt="image-20210531212203235" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531212203.png" alt="image-20210531212203235" style="zoom:50%;" />
 
 如果我们希望查看某个元素的样式，我们可以直接点击该元素对应的 `HTML` 标签
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531212728.gif" alt="1" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531212728.gif" alt="1" style="zoom:50%;" />
 
 在上面我们选中了一个标签，之后便可以在右边侧栏中观察它应用的所有的样式，并且可以直接修改，修改的结果会直接的显示在页面上。
 
 除了选中标签的方法，更多的时候我们希望直接选中页面上的某个元素，从而查看它的样式，这个时候我们需要先点击调试板左上角的小箭头，然后就可以选中页面中的一个元素去查看它的样式了
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531213612.gif" alt="2" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531213612.gif" alt="2" style="zoom:50%;" />
 
 在上面我们直接选择了元素，然后修改了它的字体。
 
@@ -29,5 +29,5 @@ commentid: css:debug-in-broswer
 
 除了可以查看样式之外，还可以在浏览器中查看盒子的大小，这对我们调整页面的布局很有帮助
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531215204.gif" alt="3" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210531215204.gif" alt="3" style="zoom:50%;" />
 

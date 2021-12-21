@@ -12,7 +12,7 @@ dirs.forEach(dir => {
         const ext = path.parse(file).ext;
         if (ext === '.md') {
             let data = fs.readFileSync(path.resolve(__dirname, dir, file), 'utf-8')
-            data = data.replaceAll('<img', '<ImageView')
+            data = data.replace(/<img/g, '<ImageView')
             fs.writeFileSync(path.resolve(__dirname, dir, file), data)
         }
     })
