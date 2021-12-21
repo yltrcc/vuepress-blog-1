@@ -290,7 +290,7 @@ console.log(buffer.buffer === newBuffer.buffer); // true
 
 `copy(target, [targetStart], [sourceStart], [sourceEnd])` 方法是将 source 从 sourceStart 到 sourceEnd 的内容复制到 target 从 targetStart 的位置，见下动图
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210302135327.gif" style="zoom: 50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210302135327.gif" style="zoom: 50%"/>
 
 除了 target 以外，其他三个参数都是可选参数，targetStart 与 sourceStart 的默认值为 0，sourceEnd 的默认值为 `buf.length`.
 

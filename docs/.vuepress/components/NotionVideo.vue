@@ -1,6 +1,6 @@
 <template>
   <div class="video-container">
-    <video ref="video" controls width="100%" height="100%"></video>
+    <video ref="video" controls width="100%" ></video>
   </div>
 </template>
 
@@ -38,10 +38,8 @@ export default {
 video {
   position: absolute;
   width: 100%;
-  height: 100%;
   left: 0;
   top: 0;
-  /* object-fit: contain; */
   border-radius: 5px;
 }
 </style>

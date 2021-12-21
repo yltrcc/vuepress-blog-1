@@ -34,7 +34,7 @@ app.listen(3000);
 
 上述代码我们引入了 `Koa`，接着使用 `new Koa()` 创建了一个服务，并且监听了 `3000` 端口。当有请求到来时，我们会直接返回 `Hello World!`。下面使用 `Postman` 发出一个 GET 请求，响应如下
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210313162455.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210313162455.png" style="zoom:50%;" />
 
 ## 中间件
 
@@ -49,7 +49,7 @@ app.listen(3000);
 
 我们通过下面这张图来看中间件的执行过程(洋葱模型)
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210313190007.png" style="zoom: 33%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210313190007.png" style="zoom: 33%;" />
 
 
 
@@ -311,7 +311,7 @@ app.use(async ctx => {
 app.listen(3000);
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314122050.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314122050.png" style="zoom:50%;" />
 
 
 
@@ -338,7 +338,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314123132.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314123132.png" style="zoom:50%;" />
 
 #### origin、protocol、host
 
@@ -352,7 +352,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314125913.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314125913.png" style="zoom:50%;" />
 
 协议以及主机名称可以直接通过 `protocol` 与 `host` 属性获得
 
@@ -365,7 +365,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314131712.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314131712.png" style="zoom:50%;" />
 
 #### href
 
@@ -381,7 +381,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314130753.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314130753.png" style="zoom:50%;" />
 
 #### path、querystring、search
 
@@ -397,7 +397,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314132111.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314132111.png" style="zoom:50%;" />
 
 ### Response
 
@@ -510,7 +510,7 @@ app.use(async ctx => {
 
 实际我们发送的内容有 `12` 个字节，但是我们设置 `Conetnt-Length` 只有 `10` 个字节，浏览器根据 `Content-Length` 的大小来接收数据，这会导致浏览器只接收到 `10` 个字节的数据
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314154337.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314154337.png" style="zoom:50%;" />
 
 #### status、message
 
@@ -598,7 +598,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314165115.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314165115.png" style="zoom:50%;" />
 
 
 
@@ -612,7 +612,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314185808.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314185808.png" style="zoom:50%;" />
 
 #### get、set、append、remove
 
@@ -664,7 +664,7 @@ app.use(async ctx => {
 
 当我们使用浏览器访问 `http://localhost:3000/` 时，会弹出下面的窗口提示我们进行下载
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314194752.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210314194752.png" style="zoom:50%;" />
 
 ## 路由
 
@@ -792,11 +792,11 @@ app.listen(3000);
 
 发送 `get` 请求
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315153816.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315153816.png" style="zoom:50%;" />
 
 发送 `post` 请求
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315153900.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315153900.png" style="zoom:50%;" />
 
 上面是使用了我们自己写了 `Router` 类，支持的功能不多，我们可以使用官网提供的 `Router` 插件，首先进行下载
 
@@ -823,7 +823,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315155534.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315155534.png" style="zoom:50%;" />
 
 获取 `post` 请求的数据需要手动解析请求体
 
@@ -848,7 +848,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315155847.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315155847.png" style="zoom:50%;" />
 
 除了手动解析参数外，我们还可以借助于中间件，这里我们使用 `koa-bodyparser`，首先进行安装
 
@@ -868,7 +868,7 @@ app.use(async ctx => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315160802.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315160802.png" style="zoom:50%;" />
 
 ## 暴露静态资源
 
@@ -921,7 +921,7 @@ app.listen(3000);
 
 现在我们使用浏览器访问
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315201940.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315201940.png" style="zoom:50%;" />
 
 字体的颜色和大小没有变化，说明没有加载到 `CSS` 文件，并且控制台也显示文件资源加载失败。现在我们使用一个中间件 `koa-static` 来处理静态资源，首先进行下载
 
@@ -956,7 +956,7 @@ app.listen(3000);
 
 再次访问
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315203247.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting2/20210315203247.png" style="zoom:50%;" />
 
 样式生效了，说明 `koa-static` 起作用了。上面我们使用当前目录作为静态资源的根目录，如果我们使用 `public` 目录作为静态资源的根目录
 

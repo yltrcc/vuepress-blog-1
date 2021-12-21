@@ -93,7 +93,7 @@ setTimeout(() => {
 
 我们来看一个时间线
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210222165625.gif" style="zoom:50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210222165625.gif" style="zoom:50%"/>
 
 1. `0ms` 时，事件队列为空
 2. `5ms` 时，第一个定时器时间到达，将回调函数添加进事件队列

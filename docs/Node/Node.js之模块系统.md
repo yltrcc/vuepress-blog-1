@@ -212,8 +212,6 @@ b.js
 6.14.8
 ```
 
-
-
 我们写一个项目，就肯定需要准备一个 `package.json` 文件，你可以手动创建该文件，或者通过 `npm init` 命令创建一个模板，一般情况下我们都会使用 `npm init` 来创建一个 `package.json` 文件
 
 <img src="https://user-images.githubusercontent.com/29890094/106990677-ad568b80-67af-11eb-94e6-df5030160cf1.png" style="zoom:50%;" />

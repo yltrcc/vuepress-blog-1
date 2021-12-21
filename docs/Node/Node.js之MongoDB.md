@@ -34,7 +34,7 @@ MongoDB 是一个 NoSQL 数据库，它的数据组织结构为
 
 进入 [MongoDB 官网](https://www.mongodb.com/try/download/community) 进行安装
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210227180803.png" style="zoom: 50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210227180803.png" style="zoom: 50%"/>
 
 然后一直下一步进行安装即可。安装好之后，运行
 
@@ -50,7 +50,7 @@ mongo
 
 即可连接到 MongoDB 服务器，然后进入 MongoDB shell，我们可以在这里输入命令操作数据库
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210227182128.png" style="zoom: 50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210227182128.png" style="zoom: 50%"/>
 
 ### 操作数据库
 

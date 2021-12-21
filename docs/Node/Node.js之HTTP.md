@@ -33,7 +33,7 @@ server.listen(3000, (err) => {
 
 上述我们搭建了一个 HTTP 服务器，它监听了 3000 端口，当有请求到来时，我们返回一个字符串 `Hello World！`，我们使用 Postman 发送一个请求测试
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220192055.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220192055.png" style="zoom:50%;" />
 
 ## 请求对象
 
@@ -107,7 +107,7 @@ server.listen(3000);
 console.log("服务启动在3000端口......");
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220210926.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220210926.png" style="zoom:50%;" />
 
 ### req.method
 
@@ -168,7 +168,7 @@ server.listen(3000, (err) => {
 });
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220204430.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220204430.png" style="zoom:50%;" />
 
 ## 响应对象
 
@@ -216,7 +216,7 @@ server.on("request", (req, res) => {
 server.listen(4000);
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220213829.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220213829.png" style="zoom:50%;" />
 
 除此之外，writeHead 还可以接收一个可选的对象来设置响应头，它的优先级比 setHeader 方法的优先级高
 
@@ -238,7 +238,7 @@ server.on("request", (req, res) => {
 server.listen(4000);
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220215045.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220215045.png" style="zoom:50%;" />
 
 ### write、end
 
@@ -262,7 +262,7 @@ server.on("request", (req, res) => {
 server.listen(4000);
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220220557.png" style="zoom:50%;" />
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210220220557.png" style="zoom:50%;" />
 
 end 方法也可以接收一个 data 参数
 

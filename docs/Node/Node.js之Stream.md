@@ -39,9 +39,9 @@ const copy = (source, target) => {
 
 在[网上](https://www.cnblogs.com/vajoy/p/6349817.html)找到一幅动图来形象的展示使用流前后数据的流动情况
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210305123350.gif"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210305123350.gif" />
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210305123407.gif"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210305123407.gif"/>
 
 Node.js 给我们提供 Stream 的 API，它是专门用来处理大文件的。因为数据是一部分一部分的处理，就像是水流一样，所以这个模块的名称就称为 Stream。
 
@@ -128,7 +128,7 @@ rs.on('end', () => {
 });
 ```
 
-暂停模式像是手动步枪，而流动模式则像是自动步枪。暂停模式与流动模式也可以相互切换，通过 `pause()` 可以从暂停状态切换到流动状态，通过 `resume()` 则可以从暂停模式切换到流动模式。
+暂停模式像是手动步枪，而流动模式则像是自动步枪。暂停模式与流动模式也可以相互切换，通过 `pause()` 可以从流动状态切换到暂停状态，通过 `resume()` 则可以从暂停模式切换到流动模式。
 
 可读流的一个经典实例就是 `http` 中的请求对象 `req`，下面的程序展示了通过监听 `req` 的 `data` 事件来读取 HTTP 请求体中的内容
 
@@ -155,7 +155,7 @@ app.listen(3000, () => {
 })
 ```
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210305204222.png" style="zoom: 50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210305204222.png" style="zoom: 50%"/>
 
 ### Writable Stream
 
@@ -298,7 +298,7 @@ app.listen(3000, () => {
 
 ### Duplex Stream 与 Transform Stream
 
-Duplex，即双工的意思，它既可以接收数据，也可以输出数据，它的输入和输出之间可以没有任何的关系，就像是一个部件内部有两个独立的系统。Duplex 继承了 可读流(Readable)，并且拥有可写流(Writable)的所有方法。 
+Duplex，即双工的意思，它既可以接收数据，也可以输出数据，它的输入和输出之间可以没有任何的关系，就像是一个部件内部有两个独立的系统。Duplex 继承了可读流(Readable)，并且拥有可写流(Writable)的所有方法。 
 
 Transform Stream 继承了 Duplex Stream，它同样具有可读流与可写流的能力，并且它的输出与输入之间是有关系的，中间做了一次转换。常见的转换流有 `zlib`，`crypto`。
 
@@ -329,7 +329,7 @@ copy('a.txt', 'b.txt');
 
 但是上面的写法却不被建议使用，因为没有考虑到可读流与可写流速度之间的差异，如果可读流输出数据的速度大于可写流写入数据的速度，这个时候就会有数据一直堆压在缓存区，导致占用过高的内存，专业术语叫做积压。
 
-我们需要改善上面的程序，具体做大就是当 `write()` 方法返回  `false`，我们切换可读流的模式为暂停模式，当可写流触发了 `drain` 事件时，我们便将可读流的状态切换为流动模式
+我们需要改善上面的程序，具体做法就是当 `write()` 方法返回  `false` 时，我们切换可读流的模式为暂停模式，当可写流触发了 `drain` 事件时，我们便将可读流的状态切换为流动模式
 
 ```javascript
 const fs = require('fs');
@@ -437,14 +437,14 @@ Readable.prototype.pipe = function(ws) {
 
 ## 实现流
 
-在本节中我们实现具体来流，通过实现流可以进一步加深对 Stream 内部工作细节的理解。
+在本节中我们来实现具体的流，通过实现流可以进一步加深对 Stream 内部工作细节的理解。
 
 ### 实现可读流
 
 上面我们都是通过 `fs.createReadableStream()` 方法来得到一个可读流的，在这里我们自己实现一个可读流。实现可读流只需要继承 `Readable` 类，然后实现 `_read()` 方法即可
 
 ```javascript
-const {Readable} = require('stream');
+const { Readable } = require('stream');
 
 class IeteratorReadableStream extends Readable {
     constructor(iterator) {
@@ -510,7 +510,7 @@ rs.on('end', () => {
 
 ```javascript
 const fs = require('fs');
-const {Writable} = require('stream');
+const { Writable } = require('stream');
 
 class FileWritableStream extends Writable {
     constructor(filepath) {
@@ -630,7 +630,7 @@ node gzip.js Graph.md Graph.md.gz
 
 来运行上面的程序，它可以将 Graph.md 使用 gzip 压缩为 Graph.md.gz。
 
-<img src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210306094436.png" style="zoom: 50%"/>
+<ImageView src="https://cdn.jsdelivr.net/gh/LastKnightCoder/ImgHosting/20210306094436.png" style="zoom: 50%"/>
 
 文件大小从 `201KB` 压缩到了 `51KB`。
 
