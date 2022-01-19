@@ -57,6 +57,10 @@ module.exports = [{
         text: 'Canvas',
         link: '/Canvas/',
         icon: 'canvas'
+    }, {
+        text: 'SVG',
+        link: '/SVG/',
+        icon: 'svg'
     }]
 }, {
     text: "编程语言",

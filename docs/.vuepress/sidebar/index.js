@@ -17,6 +17,7 @@ const Java = require('./Java.js')
 const Canvas = require('./canvas.js')
 const Python = require('./Python.js')
 const video = require('./videos.js')
+const svg = require('./svg.js')
 
 module.exports = {
     "/Node/": Node,
@@ -37,5 +38,6 @@ module.exports = {
     "/Java/": Java,
     "/Canvas/": Canvas,
     "/Python/": Python,
-    "/电视剧/": video
+    "/电视剧/": video,
+    "/SVG/": svg
 }

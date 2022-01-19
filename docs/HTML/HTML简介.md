@@ -9,7 +9,7 @@ HTML (Hyper Text Markup Language)，翻译为超文本标记语言，我们使�
 
 ```html
 <h1>这是一个大标题</h1>
-<ImageView src="..." alt="">
+<img src="..." alt="" />
 ```
 
 其中 `h1` 以及 `img` 称为标签，`h1` 表示一级标题，而 `img` 表示一张图片，具体更多的标签会在后文介绍。
