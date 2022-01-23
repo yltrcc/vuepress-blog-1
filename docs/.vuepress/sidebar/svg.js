@@ -13,5 +13,32 @@ module.exports = [{
   }, {
     title: '路径',
     path: '路径'
+  }, {
+    title: '组织文档',
+    path: '组织文档'
+  }, {
+    title: '渐变色',
+    path: '渐变色'
+  }, {
+    title: '图案',
+    path: '图案'
+  }, {
+    title: '文本',
+    path: '文本'
+  }, {
+    title: '变换',
+    path: '变换'
+  }, {
+    title: '裁剪',
+    path: '裁剪'
+  }, {
+    title: '蒙版',
+    path: '蒙版'
+  }, {
+    title: '动画',
+    path: '动画'
+  }, {
+    title: 'SVG与CSS',
+    path: 'SVG与CSS'
   }]
 }]

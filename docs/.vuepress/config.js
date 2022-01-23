@@ -60,6 +60,7 @@ module.exports = config({
                 }],
             },
             cacheHTML: true,
+            cachePic: true,
             maxSize: 20480
         },
         mdEnhance: {
@@ -73,10 +74,6 @@ module.exports = config({
     },
     plugins: [
         "@vuepress/nprogress",
-        // "vuepress-plugin-viewer",
-        // ['disqus', {
-        //     shortname: 'lastknightcoder'
-        // }],
         "element-ui",
         ['run', {
             jsLabs: ['https://unpkg.com/element-ui/lib/index.js'],

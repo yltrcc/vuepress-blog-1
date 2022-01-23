@@ -10,8 +10,8 @@ SVG 学习与思考：
 - 视口、viewBox与preserveAspectRatio
 - 基本形状
 - 路径
-- 图案
 - 渐变色
+- 图案
 - 文本
 - 变换
 - 裁剪
