@@ -71,7 +71,13 @@ module.exports = config({
             mermaid: true,
             tasklist: true
         },
+        algolia: {
+            appId: 'G5FULMAF3X',
+            apiKey: '9212aa69b31188a93726a62f8f2f7dd6',
+            indexName: 'lastknightcoder'
+        }
     },
+    
     plugins: [
         "@vuepress/nprogress",
         "element-ui",
@@ -105,6 +111,10 @@ module.exports = config({
         ['link', {
             rel: "stylesheet",
             href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css"
+        }],
+        ['link', {
+            rel: "stylesheet",
+            href: "https://cdn.jsdelivr.net/npm/@docsearch/css@alpha"
         }],
         ['link', {
             rel: "shortcut icon",
