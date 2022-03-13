@@ -71,13 +71,12 @@ module.exports = config({
             mermaid: true,
             tasklist: true
         },
-        algolia: {
-            appId: 'G5FULMAF3X',
-            apiKey: '9212aa69b31188a93726a62f8f2f7dd6',
-            indexName: 'lastknightcoder'
-        }
+        // algolia: {
+        //     appId: 'G5FULMAF3X',
+        //     apiKey: 'c5f13fc23ab8678c7fec88bdbf44acf2',
+        //     indexName: 'lastknightcoder',
+        // }
     },
-    
     plugins: [
         "@vuepress/nprogress",
         "element-ui",
@@ -88,19 +87,19 @@ module.exports = config({
         [
             'vuepress-plugin-comment',
             {
-              choosen: 'gitalk', 
-              options: {
-                clientID: '651c9d66077531d194cf',
-                clientSecret: '705cbe0ab0e14a1e67935e7f839cbdda5fe0da48',
-                repo: 'vuepress-blog',
-                owner: 'LastKnightCoder',
-                admin: ['LastKnightCoder'],
-                // github issue 不能超过 50 个字符
-                id: '<%- frontmatter.commentid %>',
-                distractionFreeMode: true // 是否启动阴影遮罩
-              }
+                choosen: 'gitalk',
+                options: {
+                    clientID: '651c9d66077531d194cf',
+                    clientSecret: '705cbe0ab0e14a1e67935e7f839cbdda5fe0da48',
+                    repo: 'vuepress-blog',
+                    owner: 'LastKnightCoder',
+                    admin: ['LastKnightCoder'],
+                    // github issue 不能超过 50 个字符
+                    id: '<%- frontmatter.commentid %>',
+                    distractionFreeMode: true // 是否启动阴影遮罩
+                }
             }
-          ],
+        ],
     ],
     base: '/vuepress-blog/',
     head: [

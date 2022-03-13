@@ -7,11 +7,14 @@
   --bg-color: white
   --heading-char-color: #9daab6
   --boxes-darker2: #bac2c9
-  --font: "Merriweather", '楷体', '楷体-简', '思源宋体' !important
-  --code-font: 'Source Code Pro', "Fira Code", "Consolas", "楷体", '楷体-简', "思源宋体"
+  --font: "Merriweather Sans", 'Source Han Sans SC VF', '楷体', '楷体-简', '思源宋体' !important
+  --code-font: 'Source Code Pro', "Fira Code", "Consolas", 'Source Han Sans SC VF', "楷体", '楷体-简', "思源宋体"
 
-body, input, textarea
-  font-family: Merriweather Snas, '楷体'
+a.sidebar-link 
+  font-weight: 500 !important
+
+body, input, textarea, button
+  font-family: var(--font)
 
 body.theme-light
   --code-bgcolor: #f6f6f6
@@ -32,10 +35,15 @@ body.theme-light .code-group-nav-tab.active:after
   background: transparent
 
 body:is(:not(.theme-dark), .theme-light, .theme-dark) .theme-default-content :is(p, li, table) code
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59) !important
-  -webkit-background-clip: text !important
-  color: transparent
-  font-weight: 1000
+  // background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59) !important
+  // -webkit-background-clip: text !important
+  // color: transparent
+  // font-weight: 1000
+  background-color: rgba(255, 229, 100, 0.3)
+  // background-color: rgb(246, 246, 246)
+  padding: .2em .4em
+  border-radius: .2em
+  color: #18045f
 
 code
   font-weight: 1000
@@ -46,9 +54,6 @@ img:not([src*="logo.svg"])
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 18%), 0 4px 15px 0 rgba(0, 0, 0, 15%)
   border-radius: 3px
   margin: 1em auto
-
-body, input, button
-  font-family: var(--font)
 
 .page .page-info,
 .page-nav,
@@ -194,3 +199,44 @@ strong
 .theme-dark .markdown-body table th,
 .theme-dark .markdown-body table td
   border-color: rgb(128, 128, 128) !important
+
+// algolia
+.search-box .DocSearch.DocSearch-Button {
+    cursor: text;
+    width: 10rem;
+    height: 2rem;
+    color: #5b5b5b;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    padding: 0 0.5rem 0 0rem;
+    outline: none;
+    transition: all 0.2s ease;
+    background: transparent;
+    background-size: 1rem;
+}
+
+.search-box .DocSearch-Button-Container {
+    margin-left: 0.4rem;
+}
+
+.search-box .DocSearch-Button .DocSearch-Search-Icon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 0.1rem;
+}
+
+.search-box .DocSearch-Button-Placeholder {
+    font-size: 0.8rem;
+}
+
+.search-box .DocSearch-Button-Keys {
+    position: absolute;
+    right: 0.1rem;
+}
+
+.search-box .DocSearch-Button-Key {
+    font-size: 12px;
+    line-height: 20px;
+}
