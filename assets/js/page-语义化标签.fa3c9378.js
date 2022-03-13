@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[246],{921:function(t,e,n){"use strict";n.r(e);var s=n(1),l=Object(s.a)({},(function(){var t=this.$createElement,e=this._self._c||t;return e("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[e("p",[this._v("在 HTML5 中，新增一批语义化的标签，这些标签的作用是为了让页面更具语义化，更加容易阅读")])])}),[],!1,null,null,null);e.default=l.exports}}]);

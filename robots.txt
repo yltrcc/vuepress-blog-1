@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://lastknightcoder.github.io/vuepress-blog/vuepress-blog/sitemap.xml
